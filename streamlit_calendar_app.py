@@ -1,0 +1,58 @@
+
+import streamlit as st
+import pandas as pd
+from streamlit_calendar import calendar
+
+# Load your dataset
+df = pd.read_csv("EconomicCalendar.csv")
+df["Date"] = pd.to_datetime(df["Date"])
+
+st.set_page_config(page_title="Economic Calendar", layout="wide")
+
+st.title("📅 Interactive Economic Calendar")
+
+# Unique currencies
+currencies = sorted(df["Currency"].dropna().unique())
+
+# Create buttons for each currency
+cols = st.columns(len(currencies))
+selected_currency = None
+
+for i, currency in enumerate(currencies):
+    if cols[i].button(currency):
+        selected_currency = currency
+
+# Set default on first run
+if "selected_currency" not in st.session_state:
+    st.session_state.selected_currency = currencies[0]
+
+if selected_currency:
+    st.session_state.selected_currency = selected_currency
+
+# Filter based on selected currency
+filtered_df = df[df["Currency"] == st.session_state.selected_currency]
+
+st.subheader(f"Showing events for: {st.session_state.selected_currency}")
+
+# Convert events to FullCalendar format
+calendar_events = [
+    {
+        "title": row["Event"],
+        "start": row["Date"].strftime("%Y-%m-%d"),
+        "allDay": True
+    }
+    for _, row in filtered_df.iterrows()
+]
+
+calendar_options = {
+    "initialView": "dayGridMonth",
+    "editable": False,
+    "height": 650,
+    "headerToolbar": {
+        "left": "prev,next today",
+        "center": "title",
+        "right": "dayGridMonth,timeGridWeek"
+    }
+}
+
+calendar(events=calendar_events, options=calendar_options)
