@@ -1,7 +1,7 @@
 
 import streamlit as st
 import pandas as pd
-from st_calendar import calendar
+from streamlit_calendar import calendar
 
 # Load your dataset
 df = pd.read_csv("EconomicCalendar.csv")
