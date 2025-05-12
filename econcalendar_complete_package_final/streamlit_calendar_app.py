@@ -1,10 +1,11 @@
-
-import streamlit as st
+import os
 import pandas as pd
+import streamlit as st
 from streamlit_calendar import calendar
 
-# Load your dataset
-df = pd.read_csv("EconomicCalendar.csv")
+# Correct relative path fix
+file_path = os.path.join(os.path.dirname(__file__), "EconomicCalendar.csv")
+df = pd.read_csv(file_path)
 df["Date"] = pd.to_datetime(df["Date"])
 
 st.set_page_config(page_title="Economic Calendar", layout="wide")
