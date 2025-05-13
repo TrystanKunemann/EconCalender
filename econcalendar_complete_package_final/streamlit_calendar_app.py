@@ -33,8 +33,8 @@ selected_currencies = st.multiselect(
 
 st.subheader(f"Showing events for: {', '.join(selected_currencies)}")
 
-# View mode toggle
-view_mode = st.radio("View Mode", ["Month View", "Day View", "Year Grid View"], horizontal=True)
+# View mode toggle (Day View removed)
+view_mode = st.radio("View Mode", ["Month View", "Year Grid View"], horizontal=True)
 
 # Year selector for Year Grid View
 if view_mode == "Year Grid View":
@@ -56,23 +56,23 @@ calendar_events = [
     for _, row in filtered_df.iterrows()
 ]
 
-# Month & Day View Options
+# Month View Options
 calendar_options_standard = {
-    "initialView": "dayGridMonth" if view_mode == "Month View" else "timeGridDay",
+    "initialView": "dayGridMonth",
     "editable": False,
     "height": 900,
     "contentHeight": "auto",
     "headerToolbar": {
         "left": "prev,next today",
         "center": "title",
-        "right": ""
+        "right": ""  # Removed view switch tabs
     },
     "dayMaxEventRows": 5,
     "fixedWeekCount": False
 }
 
-# Render Calendar for Month & Day Views
-if view_mode in ["Month View", "Day View"]:
+# Render Calendar for Month View
+if view_mode == "Month View":
     calendar(events=calendar_events, options=calendar_options_standard)
 
 # Year Grid View rendering
