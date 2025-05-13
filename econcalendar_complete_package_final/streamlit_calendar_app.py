@@ -33,9 +33,23 @@ selected_currencies = st.multiselect(
 
 st.subheader(f"Showing events for: {', '.join(selected_currencies)}")
 
-# Prepare calendar events with currency prefix and color coding
+# Button to toggle Year Grid View
+if "show_year_view" not in st.session_state:
+    st.session_state.show_year_view = False
+
+if st.button("Toggle Yearly Overview"):
+    st.session_state.show_year_view = not st.session_state.show_year_view
+
+# Year selector for Year Grid View (only when toggled)
+if st.session_state.show_year_view:
+    selected_year = st.selectbox("Select Year", [2025, 2026, 2027], index=0)
+else:
+    selected_year = pd.Timestamp.today().year
+
+# Filter events for selected currencies (no year filtering for month view)
 filtered_df = df[df["Currency"].isin(selected_currencies)]
 
+# Prepare calendar events with currency prefix and color coding
 calendar_events = [
     {
         "title": f"{row['Currency']}: {row['Event']}",
@@ -46,8 +60,8 @@ calendar_events = [
     for _, row in filtered_df.iterrows()
 ]
 
-# Calendar Options for Month View
-calendar_options = {
+# Month View Calendar Options
+calendar_options_standard = {
     "initialView": "dayGridMonth",
     "editable": False,
     "height": 900,
@@ -55,11 +69,44 @@ calendar_options = {
     "headerToolbar": {
         "left": "prev,next today",
         "center": "title",
-        "right": ""  # Removed view tabs
+        "right": ""
     },
     "dayMaxEventRows": 5,
     "fixedWeekCount": False
 }
 
-# Render Calendar (Month View always)
-calendar(events=calendar_events, options=calendar_options)
+# Render Month View Calendar
+calendar(events=calendar_events, options=calendar_options_standard)
+
+# Year Grid View rendering (when toggled)
+if st.session_state.show_year_view:
+    st.subheader(f"Year Overview: {selected_year}")
+
+    cols_per_row = 3
+    for row_idx in range(0, 12, cols_per_row):
+        cols = st.columns(cols_per_row)
+        for col_idx in range(cols_per_row):
+            month_idx = row_idx + col_idx + 1
+            if month_idx > 12:
+                continue
+
+            month_events = [
+                event for event in calendar_events
+                if pd.to_datetime(event["start"]).month == month_idx and pd.to_datetime(event["start"]).year == selected_year
+            ]
+
+            with cols[col_idx]:
+                st.markdown(f"### {pd.Timestamp(selected_year, month_idx, 1).strftime('%B %Y')}")
+
+                mini_calendar_options = {
+                    "initialView": "dayGridMonth",
+                    "initialDate": f"{selected_year}-{month_idx:02d}-01",
+                    "editable": False,
+                    "height": 450,
+                    "headerToolbar": False,
+                    "titleFormat": {"year": "numeric", "month": "short"},
+                    "fixedWeekCount": False,
+                    "dayMaxEventRows": 3
+                }
+
+                calendar(events=month_events, options=mini_calendar_options)
