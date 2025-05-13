@@ -45,18 +45,30 @@ else:
 # Filter events for selected currencies and year
 filtered_df = df[df["Currency"].isin(selected_currencies) & (df["Date"].dt.year == selected_year)]
 
-# Prepare calendar events with custom colors & bold currency names
+# Prepare calendar events with color and data passed as extendedProps
 calendar_events = [
     {
-        "title": f"<b>{row['Currency']}</b>: {row['Event']}",
+        "title": row["Event"],  # Keep raw title here
         "start": row["Date"].strftime("%Y-%m-%d"),
         "allDay": True,
-        "color": currency_colors.get(row["Currency"], 'gray')  # Default to gray if not found
+        "color": currency_colors.get(row["Currency"], 'gray'),
+        "extendedProps": {
+            "currency": row["Currency"]
+        }
     }
     for _, row in filtered_df.iterrows()
 ]
 
-# Month & Day View Options (bigger grid cells, no week tab)
+# Event Content JS function (to bold currency and show event name)
+event_content_js = """
+function(info) {
+    var currency = info.event.extendedProps.currency;
+    var title = info.event.title;
+    return { html: '<b>' + currency + '</b>: ' + title };
+}
+"""
+
+# Month & Day View Options
 calendar_options_standard = {
     "initialView": "dayGridMonth" if view_mode == "Month View" else "timeGridDay",
     "editable": False,
@@ -65,20 +77,18 @@ calendar_options_standard = {
     "headerToolbar": {
         "left": "prev,next today",
         "center": "title",
-        "right": ""  # Remove week/month tabs
+        "right": ""
     },
     "dayMaxEventRows": 5,
     "fixedWeekCount": False,
-    "eventContent": {
-        "html": True  # Enable HTML rendering for <b> tags
-    }
+    "eventContent": event_content_js
 }
 
 # Render Calendar for Month & Day Views
 if view_mode in ["Month View", "Day View"]:
     calendar(events=calendar_events, options=calendar_options_standard)
 
-# Year Grid View
+# Year Grid View rendering
 if view_mode == "Year Grid View":
     st.subheader(f"Year Overview: {selected_year}")
 
@@ -107,9 +117,7 @@ if view_mode == "Year Grid View":
                     "titleFormat": {"year": "numeric", "month": "short"},
                     "fixedWeekCount": False,
                     "dayMaxEventRows": 3,
-                    "eventContent": {
-                        "html": True
-                    }
+                    "eventContent": event_content_js
                 }
 
                 calendar(events=month_events, options=mini_calendar_options)
