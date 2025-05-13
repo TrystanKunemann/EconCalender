@@ -19,26 +19,29 @@ currency_order = ["USD", "EUR", "GBP", "JPY", "CHF", "AUD", "NZD", "CAD",
 # Filter to only currencies present in dataset
 available_currencies = [c for c in currency_order if c in df["Currency"].dropna().unique()]
 
-# Reduce button spacing with custom CSS
+# Better CSS for button compactness
 st.markdown("""
     <style>
-    .css-1aumxhk, .stButton button {
-        margin: 2px !important;
+    .stButton>button {
         padding: 4px 8px !important;
-    }
-    .stButton button {
+        margin: 2px 4px !important;
         font-size: 12px !important;
+    }
+    .button-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
     }
     </style>
 """, unsafe_allow_html=True)
 
-# Create buttons for each currency
-cols = st.columns(len(available_currencies))
+# Custom grid layout using markdown containers
 selected_currency = None
-
-for i, currency in enumerate(available_currencies):
-    if cols[i].button(currency):
+st.markdown('<div class="button-grid">', unsafe_allow_html=True)
+for currency in available_currencies:
+    if st.button(currency, key=currency):
         selected_currency = currency
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Set default on first run
 if "selected_currency" not in st.session_state:
@@ -74,4 +77,5 @@ calendar_options = {
 }
 
 calendar(events=calendar_events, options=calendar_options)
+
 
