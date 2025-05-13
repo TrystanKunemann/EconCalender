@@ -51,10 +51,18 @@ calendar_events = [
         "title": f"{row['Currency']}: {row['Event']}",
         "start": row["Date"].strftime("%Y-%m-%d"),
         "allDay": True,
-        "color": currency_colors.get(row["Currency"], 'gray')
+        "color": currency_colors.get(row["Currency"], 'gray'),
+        "extendedProps": {"full_event": row["Event"]}
     }
     for _, row in filtered_df.iterrows()
 ]
+
+# Event click popup configuration
+event_click_script = """
+function(info) {
+    alert(info.event.title);
+}
+"""
 
 # Month & Day View Options
 calendar_options_standard = {
@@ -68,7 +76,8 @@ calendar_options_standard = {
         "right": ""
     },
     "dayMaxEventRows": 5,
-    "fixedWeekCount": False
+    "fixedWeekCount": False,
+    "eventClick": event_click_script
 }
 
 # Render Calendar for Month & Day Views
@@ -103,8 +112,8 @@ if view_mode == "Year Grid View":
                     "headerToolbar": False,
                     "titleFormat": {"year": "numeric", "month": "short"},
                     "fixedWeekCount": False,
-                    "dayMaxEventRows": 3
+                    "dayMaxEventRows": 3,
+                    "eventClick": event_click_script
                 }
 
                 calendar(events=month_events, options=mini_calendar_options)
-
