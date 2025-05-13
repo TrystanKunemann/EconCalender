@@ -45,10 +45,10 @@ else:
 # Filter events for selected currencies and year
 filtered_df = df[df["Currency"].isin(selected_currencies) & (df["Date"].dt.year == selected_year)]
 
-# Prepare calendar events with color coding
+# Prepare calendar events with currency prefix and color coding
 calendar_events = [
     {
-        "title": row["Event"],
+        "title": f"{row['Currency']}: {row['Event']}",
         "start": row["Date"].strftime("%Y-%m-%d"),
         "allDay": True,
         "color": currency_colors.get(row["Currency"], 'gray')
@@ -107,3 +107,4 @@ if view_mode == "Year Grid View":
                 }
 
                 calendar(events=month_events, options=mini_calendar_options)
+
