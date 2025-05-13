@@ -18,7 +18,15 @@ currencies_order = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'AUD', 'NZD', 'CAD',
 
 currencies = [c for c in currencies_order if c in df["Currency"].unique()]
 
-# Multi-select for currencies
+# Assign colors to currencies
+currency_colors = {
+    'USD': 'blue', 'EUR': 'green', 'GBP': 'red', 'JPY': 'orange', 'CHF': 'purple',
+    'AUD': 'teal', 'NZD': 'brown', 'CAD': 'pink', 'SEK': 'cyan', 'PLN': 'gold',
+    'HUF': 'lime', 'DKK': 'magenta', 'CZK': 'indigo', 'NOK': 'olive',
+    'ZAR': 'coral', 'BRL': 'slateblue'
+}
+
+# Multi-select currencies
 selected_currencies = st.multiselect(
     "Select Currencies", options=currencies, default=[currencies[0]]
 )
@@ -37,29 +45,33 @@ else:
 # Filter events for selected currencies and year
 filtered_df = df[df["Currency"].isin(selected_currencies) & (df["Date"].dt.year == selected_year)]
 
-# Prepare calendar events
+# Prepare calendar events with custom colors & bold currency names
 calendar_events = [
     {
-        "title": f"{row['Currency']}: {row['Event']}",
+        "title": f"<b>{row['Currency']}</b>: {row['Event']}",
         "start": row["Date"].strftime("%Y-%m-%d"),
-        "allDay": True
+        "allDay": True,
+        "color": currency_colors.get(row["Currency"], 'gray')  # Default to gray if not found
     }
     for _, row in filtered_df.iterrows()
 ]
 
-# Month & Day View Options (larger grid cells)
+# Month & Day View Options (bigger grid cells, no week tab)
 calendar_options_standard = {
     "initialView": "dayGridMonth" if view_mode == "Month View" else "timeGridDay",
     "editable": False,
-    "height": 900,  # Increased height for bigger grid cells
+    "height": 900,
     "contentHeight": "auto",
     "headerToolbar": {
         "left": "prev,next today",
         "center": "title",
         "right": ""  # Remove week/month tabs
     },
-    "dayMaxEventRows": 5,  # Show more events per day in month view
-    "fixedWeekCount": False
+    "dayMaxEventRows": 5,
+    "fixedWeekCount": False,
+    "eventContent": {
+        "html": True  # Enable HTML rendering for <b> tags
+    }
 }
 
 # Render Calendar for Month & Day Views
@@ -70,7 +82,6 @@ if view_mode in ["Month View", "Day View"]:
 if view_mode == "Year Grid View":
     st.subheader(f"Year Overview: {selected_year}")
 
-    # Arrange mini calendars in grid
     cols_per_row = 3
     for row_idx in range(0, 12, cols_per_row):
         cols = st.columns(cols_per_row)
@@ -86,17 +97,19 @@ if view_mode == "Year Grid View":
 
             with cols[col_idx]:
                 st.markdown(f"### {pd.Timestamp(selected_year, month_idx, 1).strftime('%B %Y')}")
-                
+
                 mini_calendar_options = {
                     "initialView": "dayGridMonth",
                     "initialDate": f"{selected_year}-{month_idx:02d}-01",
                     "editable": False,
-                    "height": 450,  # Taller mini-calendars to see all days
+                    "height": 450,
                     "headerToolbar": False,
                     "titleFormat": {"year": "numeric", "month": "short"},
                     "fixedWeekCount": False,
-                    "dayMaxEventRows": 3  # More events shown per day in mini calendars
+                    "dayMaxEventRows": 3,
+                    "eventContent": {
+                        "html": True
+                    }
                 }
 
                 calendar(events=month_events, options=mini_calendar_options)
-
