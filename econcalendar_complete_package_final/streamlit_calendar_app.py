@@ -13,14 +13,11 @@ st.set_page_config(page_title="Economic Calendar", layout="wide")
 st.title("📅 Interactive Economic Calendar")
 
 # --- Currency Buttons ---
-# Custom currency order
 custom_order = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'AUD', 'NZD', 'CAD', 
                 'SEK', 'PLN', 'HUF', 'DKK', 'CZK', 'NOK', 'ZAR', 'BRL']
 
-# Filter only currencies in dataset
 currencies = [c for c in custom_order if c in df["Currency"].unique()]
 
-# Create tighter buttons with smaller width
 currency_container = st.container()
 with currency_container:
     cols = st.columns(len(currencies))
@@ -29,7 +26,6 @@ with currency_container:
         if cols[i].button(currency):
             selected_currency = currency
 
-# Default selection
 if "selected_currency" not in st.session_state:
     st.session_state.selected_currency = currencies[0]
 
@@ -37,12 +33,12 @@ if selected_currency:
     st.session_state.selected_currency = selected_currency
 
 # --- View Toggle ---
-view_mode = st.radio("Select View Mode:", ["Monthly", "Weekly", "Year Grid View"], horizontal=True)
+view_mode = st.radio("Select View Mode:", ["Monthly", "Year Grid View"], horizontal=True)
 
 # --- Filter Data ---
 filtered_df = df[df["Currency"] == st.session_state.selected_currency]
 
-# --- Main View Logic ---
+# --- Main View ---
 if view_mode != "Year Grid View":
     calendar_events = [
         {
@@ -54,13 +50,13 @@ if view_mode != "Year Grid View":
     ]
 
     calendar_options = {
-        "initialView": "dayGridMonth" if view_mode == "Monthly" else "timeGridWeek",
+        "initialView": "dayGridMonth",
         "editable": False,
         "height": 650,
         "headerToolbar": {
             "left": "prev,next today",
             "center": "title",
-            "right": "dayGridMonth,timeGridWeek"
+            "right": ""  # Remove month/week tabs
         }
     }
 
@@ -89,8 +85,8 @@ else:
         calendar_options = {
             "initialView": "dayGridMonth",
             "editable": False,
-            "height": 200,  # Smaller height for grid effect
-            "headerToolbar": False,
+            "height": 350,  # Increased to show full month without scroll
+            "headerToolbar": False,  # Remove header toolbar
             "titleFormat": {"year": "numeric", "month": "short"},
             "fixedWeekCount": False
         }
@@ -98,3 +94,4 @@ else:
         with cols[idx % 3]:
             st.markdown(f"##### {month_names[month-1]}")
             calendar(events=calendar_events, options=calendar_options)
+
