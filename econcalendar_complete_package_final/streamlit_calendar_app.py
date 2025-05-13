@@ -10,7 +10,7 @@ df["Date"] = pd.to_datetime(df["Date"])
 
 st.set_page_config(page_title="Economic Calendar", layout="wide")
 
-st.title("📅 Interactive Economic Calendar")
+st.title("Interactive Economic Calendar")
 
 # Currencies in desired order
 currencies_order = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'AUD', 'NZD', 'CAD',
