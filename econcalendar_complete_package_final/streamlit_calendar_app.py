@@ -18,22 +18,12 @@ currencies_order = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'AUD', 'NZD', 'CAD',
 
 currencies = [c for c in currencies_order if c in df["Currency"].unique()]
 
-# Currency buttons
-cols = st.columns(len(currencies))
-selected_currency = None
+# Multi-select for currencies
+selected_currencies = st.multiselect(
+    "Select Currencies", options=currencies, default=[currencies[0]]
+)
 
-for i, currency in enumerate(currencies):
-    if cols[i].button(currency):
-        selected_currency = currency
-
-# Maintain selected currency
-if "selected_currency" not in st.session_state:
-    st.session_state.selected_currency = currencies[0]
-
-if selected_currency:
-    st.session_state.selected_currency = selected_currency
-
-st.subheader(f"Showing events for: {st.session_state.selected_currency}")
+st.subheader(f"Showing events for: {', '.join(selected_currencies)}")
 
 # View mode toggle
 view_mode = st.radio("View Mode", ["Month View", "Day View", "Year Grid View"], horizontal=True)
@@ -44,33 +34,35 @@ if view_mode == "Year Grid View":
 else:
     selected_year = pd.Timestamp.today().year
 
-# Filter events for selected currency and year
-filtered_df = df[(df["Currency"] == st.session_state.selected_currency) & 
-                 (df["Date"].dt.year == selected_year)]
+# Filter events for selected currencies and year
+filtered_df = df[df["Currency"].isin(selected_currencies) & (df["Date"].dt.year == selected_year)]
 
 # Prepare calendar events
 calendar_events = [
     {
-        "title": row["Event"],
+        "title": f"{row['Currency']}: {row['Event']}",
         "start": row["Date"].strftime("%Y-%m-%d"),
         "allDay": True
     }
     for _, row in filtered_df.iterrows()
 ]
 
-# Month & Day View Options
+# Month & Day View Options (larger grid cells)
 calendar_options_standard = {
     "initialView": "dayGridMonth" if view_mode == "Month View" else "timeGridDay",
     "editable": False,
-    "height": 700,
+    "height": 900,  # Increased height for bigger grid cells
+    "contentHeight": "auto",
     "headerToolbar": {
         "left": "prev,next today",
         "center": "title",
-        "right": ""  # Remove week/month buttons
-    }
+        "right": ""  # Remove week/month tabs
+    },
+    "dayMaxEventRows": 5,  # Show more events per day in month view
+    "fixedWeekCount": False
 }
 
-# Render Calendar based on view mode
+# Render Calendar for Month & Day Views
 if view_mode in ["Month View", "Day View"]:
     calendar(events=calendar_events, options=calendar_options_standard)
 
@@ -79,7 +71,7 @@ if view_mode == "Year Grid View":
     st.subheader(f"Year Overview: {selected_year}")
 
     # Arrange mini calendars in grid
-    cols_per_row = 4
+    cols_per_row = 3
     for row_idx in range(0, 12, cols_per_row):
         cols = st.columns(cols_per_row)
         for col_idx in range(cols_per_row):
@@ -99,10 +91,12 @@ if view_mode == "Year Grid View":
                     "initialView": "dayGridMonth",
                     "initialDate": f"{selected_year}-{month_idx:02d}-01",
                     "editable": False,
-                    "height": 400,  # Taller to show all days without scroll
+                    "height": 450,  # Taller mini-calendars to see all days
                     "headerToolbar": False,
                     "titleFormat": {"year": "numeric", "month": "short"},
-                    "fixedWeekCount": False
+                    "fixedWeekCount": False,
+                    "dayMaxEventRows": 3  # More events shown per day in mini calendars
                 }
 
                 calendar(events=month_events, options=mini_calendar_options)
+
