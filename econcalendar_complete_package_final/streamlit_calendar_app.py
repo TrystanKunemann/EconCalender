@@ -10,7 +10,7 @@ df["Date"] = pd.to_datetime(df["Date"])
 
 st.set_page_config(page_title="Economic Calendar", layout="wide")
 
-st.title("Interactive Economic Calendar")
+st.title("📅 Interactive Economic Calendar")
 
 # Currencies in desired order
 currencies_order = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'AUD', 'NZD', 'CAD',
@@ -36,11 +36,12 @@ st.subheader(f"Showing events for: {', '.join(selected_currencies)}")
 # View mode toggle (Day View removed)
 view_mode = st.radio("View Mode", ["Month View", "Year Grid View"], horizontal=True)
 
-# Year selector for Year Grid View
+# Year selector (for both views now)
 if view_mode == "Year Grid View":
     selected_year = st.selectbox("Select Year", [2025, 2026, 2027], index=0)
 else:
-    selected_year = pd.Timestamp.today().year
+    # Allow Year selection for Month View as well
+    selected_year = st.selectbox("Select Year (Month View)", [2025, 2026, 2027], index=0)
 
 # Filter events for selected currencies and year
 filtered_df = df[df["Currency"].isin(selected_currencies) & (df["Date"].dt.year == selected_year)]
@@ -59,6 +60,7 @@ calendar_events = [
 # Month View Options
 calendar_options_standard = {
     "initialView": "dayGridMonth",
+    "initialDate": f"{selected_year}-01-01",
     "editable": False,
     "height": 900,
     "contentHeight": "auto",
