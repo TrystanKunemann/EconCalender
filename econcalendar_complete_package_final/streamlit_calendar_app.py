@@ -52,37 +52,47 @@ calendar_events = [
         "start": row["Date"].strftime("%Y-%m-%d"),
         "allDay": True,
         "color": currency_colors.get(row["Currency"], 'gray'),
-        "extendedProps": {"full_event": row["Event"]}
+        "tooltip": f"{row['Currency']}: {row['Event']}",
+        "id": idx
     }
-    for _, row in filtered_df.iterrows()
+    for idx, (_, row) in enumerate(filtered_df.iterrows())
 ]
 
-# Event click popup configuration
+# Streamlit state to track selected event click
+if "clicked_event" not in st.session_state:
+    st.session_state.clicked_event = None
+
+# Use custom JS callback to trigger Streamlit update on click
 event_click_script = """
 function(info) {
-    alert(info.event.title);
+    window.parent.postMessage({
+        isStreamlitMessage: true,
+        type: 'streamlit:setComponentValue',
+        value: info.event.id
+    }, '*');
 }
 """
 
-# Month & Day View Options
+# Common calendar options
+calendar_height = 1000 if view_mode != "Year Grid View" else 650
 calendar_options_standard = {
     "initialView": "dayGridMonth" if view_mode == "Month View" else "timeGridDay",
     "editable": False,
-    "height": 900,
+    "height": calendar_height,
     "contentHeight": "auto",
     "headerToolbar": {
         "left": "prev,next today",
         "center": "title",
         "right": ""
     },
-    "dayMaxEventRows": 5,
+    "dayMaxEventRows": 6,
     "fixedWeekCount": False,
     "eventClick": event_click_script
 }
 
-# Render Calendar for Month & Day Views
+# Render Main Calendar
 if view_mode in ["Month View", "Day View"]:
-    calendar(events=calendar_events, options=calendar_options_standard)
+    calendar(events=calendar_events, options=calendar_options_standard, key="main_calendar")
 
 # Year Grid View rendering
 if view_mode == "Year Grid View":
@@ -108,12 +118,26 @@ if view_mode == "Year Grid View":
                     "initialView": "dayGridMonth",
                     "initialDate": f"{selected_year}-{month_idx:02d}-01",
                     "editable": False,
-                    "height": 450,
+                    "height": 500,
                     "headerToolbar": False,
-                    "titleFormat": {"year": "numeric", "month": "short"},
                     "fixedWeekCount": False,
-                    "dayMaxEventRows": 3,
+                    "dayMaxEventRows": 4,
                     "eventClick": event_click_script
                 }
 
-                calendar(events=month_events, options=mini_calendar_options)
+                calendar(events=month_events, options=mini_calendar_options, key=f"year_view_{month_idx}")
+
+# Handle Event Clicks - Show details
+clicked_id = st.experimental_get_query_params().get("streamlit_component_value", [None])[0]
+
+if clicked_id is not None:
+    try:
+        clicked_id = int(clicked_id)
+        clicked_event = calendar_events[clicked_id]
+        st.session_state.clicked_event = clicked_event
+    except:
+        pass
+
+# Show Event Details Panel
+if st.session_state.clicked_event:
+    st.info(f"**Event Details:** {st.session_state.clicked_event['title']}")
