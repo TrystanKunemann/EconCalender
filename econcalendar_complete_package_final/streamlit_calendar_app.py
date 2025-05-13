@@ -45,28 +45,16 @@ else:
 # Filter events for selected currencies and year
 filtered_df = df[df["Currency"].isin(selected_currencies) & (df["Date"].dt.year == selected_year)]
 
-# Prepare calendar events with color and data passed as extendedProps
+# Prepare calendar events with color coding
 calendar_events = [
     {
-        "title": row["Event"],  # Keep raw title here
+        "title": row["Event"],
         "start": row["Date"].strftime("%Y-%m-%d"),
         "allDay": True,
-        "color": currency_colors.get(row["Currency"], 'gray'),
-        "extendedProps": {
-            "currency": row["Currency"]
-        }
+        "color": currency_colors.get(row["Currency"], 'gray')
     }
     for _, row in filtered_df.iterrows()
 ]
-
-# Event Content JS function (to bold currency and show event name)
-event_content_js = """
-function(info) {
-    var currency = info.event.extendedProps.currency;
-    var title = info.event.title;
-    return { html: '<b>' + currency + '</b>: ' + title };
-}
-"""
 
 # Month & Day View Options
 calendar_options_standard = {
@@ -80,8 +68,7 @@ calendar_options_standard = {
         "right": ""
     },
     "dayMaxEventRows": 5,
-    "fixedWeekCount": False,
-    "eventContent": event_content_js
+    "fixedWeekCount": False
 }
 
 # Render Calendar for Month & Day Views
@@ -116,8 +103,7 @@ if view_mode == "Year Grid View":
                     "headerToolbar": False,
                     "titleFormat": {"year": "numeric", "month": "short"},
                     "fixedWeekCount": False,
-                    "dayMaxEventRows": 3,
-                    "eventContent": event_content_js
+                    "dayMaxEventRows": 3
                 }
 
                 calendar(events=month_events, options=mini_calendar_options)
