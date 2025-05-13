@@ -12,20 +12,37 @@ st.set_page_config(page_title="Economic Calendar", layout="wide")
 
 st.title("📅 Interactive Economic Calendar")
 
-# Unique currencies
-currencies = sorted(df["Currency"].dropna().unique())
+# Desired currency order
+currency_order = ["USD", "EUR", "GBP", "JPY", "CHF", "AUD", "NZD", "CAD",
+                  "SEK", "PLN", "HUF", "DKK", "CZK", "NOK", "ZAR", "BRL"]
+
+# Filter to only currencies present in dataset
+available_currencies = [c for c in currency_order if c in df["Currency"].dropna().unique()]
+
+# Reduce button spacing with custom CSS
+st.markdown("""
+    <style>
+    .css-1aumxhk, .stButton button {
+        margin: 2px !important;
+        padding: 4px 8px !important;
+    }
+    .stButton button {
+        font-size: 12px !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Create buttons for each currency
-cols = st.columns(len(currencies))
+cols = st.columns(len(available_currencies))
 selected_currency = None
 
-for i, currency in enumerate(currencies):
+for i, currency in enumerate(available_currencies):
     if cols[i].button(currency):
         selected_currency = currency
 
 # Set default on first run
 if "selected_currency" not in st.session_state:
-    st.session_state.selected_currency = currencies[0]
+    st.session_state.selected_currency = available_currencies[0]
 
 if selected_currency:
     st.session_state.selected_currency = selected_currency
@@ -57,3 +74,4 @@ calendar_options = {
 }
 
 calendar(events=calendar_events, options=calendar_options)
+
