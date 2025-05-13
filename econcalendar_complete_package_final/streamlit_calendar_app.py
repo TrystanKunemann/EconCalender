@@ -3,64 +3,51 @@ import pandas as pd
 import streamlit as st
 from streamlit_calendar import calendar
 
-# Correct relative path fix
+# Load data
 file_path = os.path.join(os.path.dirname(__file__), "EconomicCalendar.csv")
 df = pd.read_csv(file_path)
 df["Date"] = pd.to_datetime(df["Date"])
 
-st.set_page_config(page_title="Economic Calendar", layout="wide")
+st.set_page_config(page_title="Yearly Economic Calendar", layout="wide")
 
-st.title("📅 Interactive Economic Calendar")
+st.title("📅 Yearly Economic Calendar (Grid View)")
 
-# Unique currencies sorted alphabetically
+# Currency filter
 currencies = sorted(df["Currency"].dropna().unique())
+currency = st.selectbox("Select Currency", currencies)
 
-# Create buttons for each currency in a single row of columns
-cols = st.columns(len(currencies))
-selected_currency = None
+# Filter data
+filtered_df = df[df["Currency"] == currency]
 
-for i, currency in enumerate(currencies):
-    if cols[i].button(currency):
-        selected_currency = currency
+# Layout: 3 columns per row (4 rows for 12 months)
+cols = st.columns(3)
 
-# Set default on first run
-if "selected_currency" not in st.session_state:
-    st.session_state.selected_currency = currencies[0]
-
-if selected_currency:
-    st.session_state.selected_currency = selected_currency
-
-# Filter based on selected currency
-filtered_df = df[df["Currency"] == st.session_state.selected_currency]
-
-st.subheader(f"Showing events for: {st.session_state.selected_currency}")
-
-# Convert events to FullCalendar format
-calendar_events = [
-    {
-        "title": row["Event"],
-        "start": row["Date"].strftime("%Y-%m-%d"),
-        "allDay": True
-    }
-    for _, row in filtered_df.iterrows()
+month_names = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
 ]
 
-calendar_options = {
-    "initialView": "dayGridMonth",
-    "editable": False,
-    "height": 650,
-    "headerToolbar": {
-        "left": "prev,next today",
-        "center": "title",
-        "right": "dayGridMonth,timeGridWeek,listYear"
-    },
-    "views": {
-        "listYear": {
-            "type": "list",
-            "duration": {"years": 1},
-            "buttonText": "Year"
-        }
-    }
-}
+for idx, month in enumerate(range(1, 13)):
+    month_df = filtered_df[filtered_df["Date"].dt.month == month]
 
-calendar(events=calendar_events, options=calendar_options)
+    calendar_events = [
+        {
+            "title": row["Event"],
+            "start": row["Date"].strftime("%Y-%m-%d"),
+            "allDay": True
+        }
+        for _, row in month_df.iterrows()
+    ]
+
+    calendar_options = {
+        "initialView": "dayGridMonth",
+        "editable": False,
+        "height": 300,
+        "headerToolbar": False,
+        "titleFormat": {"year": "numeric", "month": "long"},
+        "fixedWeekCount": False
+    }
+
+    with cols[idx % 3]:
+        st.markdown(f"#### {month_names[month-1]}")
+        calendar(events=calendar_events, options=calendar_options)
