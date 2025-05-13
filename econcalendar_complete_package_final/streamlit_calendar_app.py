@@ -9,16 +9,13 @@ df = pd.read_csv(file_path)
 df["Date"] = pd.to_datetime(df["Date"])
 
 st.set_page_config(page_title="Economic Calendar", layout="wide")
-
 st.title("📅 Interactive Economic Calendar")
 
-# Currencies in desired order
+# Currency settings
 currencies_order = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'AUD', 'NZD', 'CAD',
                     'SEK', 'PLN', 'HUF', 'DKK', 'CZK', 'NOK', 'ZAR', 'BRL']
 
 currencies = [c for c in currencies_order if c in df["Currency"].unique()]
-
-# Assign colors to currencies
 currency_colors = {
     'USD': 'blue', 'EUR': 'green', 'GBP': 'red', 'JPY': 'orange', 'CHF': 'purple',
     'AUD': 'teal', 'NZD': 'brown', 'CAD': 'pink', 'SEK': 'cyan', 'PLN': 'gold',
@@ -26,26 +23,24 @@ currency_colors = {
     'ZAR': 'coral', 'BRL': 'slateblue'
 }
 
-# Multi-select currencies
+# Currency multi-select
 selected_currencies = st.multiselect(
     "Select Currencies", options=currencies, default=[currencies[0]]
 )
 
 st.subheader(f"Showing events for: {', '.join(selected_currencies)}")
 
-# View mode toggle
+# View Mode toggle
 view_mode = st.radio("View Mode", ["Month View", "Day View", "Year Grid View"], horizontal=True)
 
-# Year selector for Year Grid View
 if view_mode == "Year Grid View":
     selected_year = st.selectbox("Select Year", [2025, 2026, 2027], index=0)
 else:
     selected_year = pd.Timestamp.today().year
 
-# Filter events for selected currencies and year
+# Filter events
 filtered_df = df[df["Currency"].isin(selected_currencies) & (df["Date"].dt.year == selected_year)]
 
-# Prepare calendar events
 calendar_events = [
     {
         "title": f"{row['Currency']}: {row['Event']}",
@@ -57,7 +52,7 @@ calendar_events = [
     for _, row in filtered_df.iterrows()
 ]
 
-# Callbacks for tooltips & click popups
+# Event Callbacks (tooltip + click popup)
 calendar_callbacks = {
     "eventDidMount": """
         function(info) {
@@ -70,25 +65,25 @@ calendar_callbacks = {
     """,
     "eventClick": """
         function(info) {
-            alert('Event: ' + info.event.title);
+            alert(info.event.title);
         }
     """
 }
 
-# Calendar options for main calendar
+# Calendar Configurations
 calendar_height = 1200 if view_mode != "Year Grid View" else 650
+
 calendar_options_standard = {
     "initialView": "dayGridMonth" if view_mode == "Month View" else "timeGridDay",
     "editable": False,
     "height": calendar_height,
-    "contentHeight": "auto",
     "headerToolbar": {
         "left": "prev,next today",
         "center": "title",
-        "right": ""
+        "right": ""  # Not False or None, just empty string
     },
     "dayMaxEventRows": 6,
-    "fixedWeekCount": True  # Fixed to True for compatibility
+    "fixedWeekCount": True
 }
 
 # Render Main Calendar
@@ -100,7 +95,7 @@ if view_mode in ["Month View", "Day View"]:
         key="main_calendar"
     )
 
-# Year Grid View rendering
+# Year Grid View
 if view_mode == "Year Grid View":
     st.subheader(f"Year Overview: {selected_year}")
 
@@ -125,11 +120,7 @@ if view_mode == "Year Grid View":
                     "initialDate": f"{selected_year}-{month_idx:02d}-01",
                     "editable": False,
                     "height": 600,
-                    "headerToolbar": {
-                        "left": "",
-                        "center": "",
-                        "right": ""
-                    },
+                    "headerToolbar": None,  # Use None instead of False
                     "fixedWeekCount": True,
                     "dayMaxEventRows": 4
                 }
