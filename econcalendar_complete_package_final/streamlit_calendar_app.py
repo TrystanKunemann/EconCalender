@@ -52,7 +52,14 @@ calendar_options = {
     "headerToolbar": {
         "left": "prev,next today",
         "center": "title",
-        "right": "dayGridMonth,timeGridWeek"
+        "right": "dayGridMonth,timeGridWeek,listYear"
+    },
+    "views": {
+        "listYear": {
+            "type": "list",
+            "duration": {"years": 1},
+            "buttonText": "Year"
+        }
     }
 }
 
