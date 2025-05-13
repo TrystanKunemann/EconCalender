@@ -45,19 +45,19 @@ else:
 # Filter events for selected currencies and year
 filtered_df = df[df["Currency"].isin(selected_currencies) & (df["Date"].dt.year == selected_year)]
 
-# Prepare calendar events with currency prefix and color coding
+# Prepare calendar events
 calendar_events = [
     {
         "title": f"{row['Currency']}: {row['Event']}",
         "start": row["Date"].strftime("%Y-%m-%d"),
         "allDay": True,
         "color": currency_colors.get(row["Currency"], 'gray'),
-        "extendedProps": {"description": row["Event"]}  # For tooltips
+        "extendedProps": {"description": row["Event"]}
     }
     for _, row in filtered_df.iterrows()
 ]
 
-# Tooltip and click popup handler using FullCalendar's eventDidMount and eventClick
+# Callbacks for tooltips & click popups
 calendar_callbacks = {
     "eventDidMount": """
         function(info) {
@@ -75,7 +75,7 @@ calendar_callbacks = {
     """
 }
 
-# Common calendar options
+# Calendar options for main calendar
 calendar_height = 1200 if view_mode != "Year Grid View" else 650
 calendar_options_standard = {
     "initialView": "dayGridMonth" if view_mode == "Month View" else "timeGridDay",
@@ -88,7 +88,7 @@ calendar_options_standard = {
         "right": ""
     },
     "dayMaxEventRows": 6,
-    "fixedWeekCount": False
+    "fixedWeekCount": True  # Fixed to True for compatibility
 }
 
 # Render Main Calendar
@@ -125,9 +125,13 @@ if view_mode == "Year Grid View":
                     "initialDate": f"{selected_year}-{month_idx:02d}-01",
                     "editable": False,
                     "height": 600,
-                    "headerToolbar": False,
-                    "fixedWeekCount": False,
-                    "dayMaxEventRows": 5
+                    "headerToolbar": {
+                        "left": "",
+                        "center": "",
+                        "right": ""
+                    },
+                    "fixedWeekCount": True,
+                    "dayMaxEventRows": 4
                 }
 
                 calendar(
