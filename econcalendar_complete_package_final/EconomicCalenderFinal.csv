@@ -1,0 +1,650 @@
+date,currency,event
+2025-04-30,JPY,Monetary Policy
+2025-01-05,JPY,Monetary Policy
+2025-06-05,USD,Monetary Policy
+2025-06-05,EUR,Monetary Policy
+2025-06-05,PLN,Monetary Policy
+2025-07-05,EUR,Monetary Policy
+2025-07-05,CZK,Monetary Policy
+2025-07-05,USD,Monetary Policy
+2025-08-05,NOK,Monetary Policy
+2025-08-05,GBP,Monetary Policy
+2025-05-19,AUD,Monetary Policy
+2025-05-20,AUD,Monetary Policy
+2025-05-29,ZAR,Monetary Policy
+2025-03-06,PLN,Monetary Policy
+2025-04-06,EUR,Monetary Policy
+2025-04-06,CAD,Monetary Policy
+2025-05-06,EUR,Monetary Policy
+2025-06-16,JPY,Monetary Policy
+2025-06-17,JPY,Monetary Policy
+2025-06-17,USD,Monetary Policy
+2025-06-17,SEK,Monetary Policy
+2025-06-18,BRL,Monetary Policy
+2025-06-18,USD,Monetary Policy
+2025-06-19,GBP,Monetary Policy
+2025-06-19,NOK,Monetary Policy
+2025-06-19,CHF,Monetary Policy
+2025-06-25,CZK,Monetary Policy
+2025-06-25,HUF,Monetary Policy
+2025-01-07,PLN,Monetary Policy
+2025-07-07,AUD,Monetary Policy
+2025-08-07,AUD,Monetary Policy
+2025-07-23,EUR,Monetary Policy
+2025-07-24,ZAR,Monetary Policy
+2025-07-24,EUR,Monetary Policy
+2025-07-29,USD,Monetary Policy
+2025-07-30,JPY,Monetary Policy
+2025-07-30,USD,Monetary Policy
+2025-07-30,CAD,Monetary Policy
+2025-07-31,JPY,Monetary Policy
+2025-06-08,BRL,Monetary Policy
+2025-07-08,CZK,Monetary Policy
+2025-07-08,GBP,Monetary Policy
+2025-11-08,AUD,Monetary Policy
+2025-12-08,AUD,Monetary Policy
+2025-08-13,NZD,Monetary Policy
+2025-08-14,NOK,Monetary Policy
+2025-08-26,PLN,Monetary Policy
+2025-02-09,PLN,Monetary Policy
+2025-03-09,SEK,Monetary Policy
+2025-10-09,EUR,Monetary Policy
+2025-11-09,EUR,Monetary Policy
+2025-09-16,USD,Monetary Policy
+2025-09-17,BRL,Monetary Policy
+2025-09-17,CAD,Monetary Policy
+2025-09-17,USD,Monetary Policy
+2025-09-18,GBP,Monetary Policy
+2025-09-18,JPY,Monetary Policy
+2025-09-19,JPY,Monetary Policy
+2025-09-19,ZAR,Monetary Policy
+2025-09-23,HUF,Monetary Policy
+2025-09-24,CZK,Monetary Policy
+2025-09-25,CHF,Monetary Policy
+2025-09-25,NOK,Monetary Policy
+2025-09-29,AUD,Monetary Policy
+2025-09-30,AUD,Monetary Policy
+2025-01-10,NZD,Monetary Policy
+2025-07-10,PLN,Monetary Policy
+2025-10-28,USD,Monetary Policy
+2025-10-29,EUR,Monetary Policy
+2025-10-29,JPY,Monetary Policy
+2025-10-29,CAD,Monetary Policy
+2025-10-29,BRL,Monetary Policy
+2025-10-29,USD,Monetary Policy
+2025-10-30,EUR,Monetary Policy
+2025-10-30,JPY,Monetary Policy
+2025-03-11,AUD,Monetary Policy
+2025-04-11,AUD,Monetary Policy
+2025-04-11,PLN,Monetary Policy
+2025-06-11,CZK,Monetary Policy
+2025-06-11,NOK,Monetary Policy
+2025-06-11,GBP,Monetary Policy
+2025-11-21,ZAR,Monetary Policy
+2025-11-26,SEK,Monetary Policy
+2025-11-26,NZD,Monetary Policy
+2025-02-12,PLN,Monetary Policy
+2025-08-12,AUD,Monetary Policy
+2025-09-12,USD,Monetary Policy
+2025-09-12,AUD,Monetary Policy
+2025-10-12,BRL,Monetary Policy
+2025-10-12,USD,Monetary Policy
+2025-10-12,CAD,Monetary Policy
+2025-11-12,NOK,Monetary Policy
+2025-11-12,CHF,Monetary Policy
+2025-12-16,HUF,Monetary Policy
+2025-12-17,SEK,Monetary Policy
+2025-12-17,EUR,Monetary Policy
+2025-12-18,GBP,Monetary Policy
+2025-12-18,JPY,Monetary Policy
+2025-12-18,EUR,Monetary Policy
+2025-12-18,CZK,Monetary Policy
+2025-12-19,JPY,Monetary Policy
+2026-01-21,BRL,Monetary Policy
+2026-01-23,ZAR,Monetary Policy
+2026-04-03,BRL,Monetary Policy
+2026-03-20,ZAR,Monetary Policy
+2026-04-15,BRL,Monetary Policy
+2025-01-01,USD,New Year's Day
+2025-01-20,USD,Martin Luther King Jr. Day
+2025-02-17,USD,Presidents' Day
+2025-05-26,USD,Memorial Day
+2025-04-07,USD,Independence Day
+2025-01-09,USD,Labor Day
+2025-10-13,USD,Columbus Day
+2025-11-11,USD,Veterans Day
+2025-11-27,USD,Thanksgiving Day
+2025-12-25,USD,Christmas Day
+2026-01-01,USD,New Year's Day
+2026-01-19,USD,Martin Luther King Jr. Day
+2026-02-16,USD,Presidents' Day
+2026-05-25,USD,Memorial Day
+2026-04-07,USD,Independence Day
+2026-07-09,USD,Labor Day
+2026-12-10,USD,Columbus Day
+2026-11-11,USD,Veterans Day
+2026-11-26,USD,Thanksgiving Day
+2026-12-25,USD,Christmas Day
+2025-01-01,GBP,New Year's Day
+2025-04-18,GBP,Good Friday
+2025-04-21,GBP,Easter Monday
+2025-05-05,GBP,Early May Bank Holiday
+2025-05-26,GBP,Spring Bank Holiday
+2025-08-25,GBP,Summer Bank Holiday
+2025-12-25,GBP,Christmas Day
+2025-12-26,GBP,Boxing Day
+2026-01-01,GBP,New Year's Day
+2026-03-04,GBP,Good Friday
+2026-06-04,GBP,Easter Monday
+2026-04-05,GBP,Early May Bank Holiday
+2026-05-25,GBP,Spring Bank Holiday
+2026-08-31,GBP,Summer Bank Holiday
+2026-12-25,GBP,Christmas Day
+2025-01-01,EUR,New Year's Day
+2025-04-18,EUR,Good Friday
+2025-04-21,EUR,Easter Monday
+2025-01-05,EUR,Labour Day
+2025-09-05,EUR,Europe Day
+2025-05-29,EUR,Ascension Day
+2025-09-06,EUR,Whit Monday
+2025-12-25,EUR,Christmas Day
+2025-12-26,EUR,St. Stephen's Day
+2026-01-01,EUR,New Year's Day
+2026-03-04,EUR,Good Friday
+2026-06-04,EUR,Easter Monday
+2026-01-05,EUR,Labour Day
+2026-09-05,EUR,Europe Day
+2026-05-14,EUR,Ascension Day
+2026-05-25,EUR,Whit Monday
+2026-12-25,EUR,Christmas Day
+2026-12-26,EUR,St. Stephen's Day
+2025-01-01,JPY,New Year's Day
+2025-01-13,JPY,Coming of Age Day
+2025-11-02,JPY,National Foundation Day
+2025-02-23,JPY,Emperor's Birthday
+2025-04-29,JPY,Shōwa Day
+2025-03-05,JPY,Constitution Memorial Day
+2025-04-05,JPY,Greenery Day
+2025-05-05,JPY,Children’s Day
+2025-09-15,JPY,Respect for the Aged Day
+2025-09-23,JPY,Autumn Equinox
+2025-03-11,JPY,Culture Day
+2025-11-23,JPY,Labour Thanksgiving Day
+2026-01-01,JPY,New Year's Day
+2026-12-01,JPY,Coming of Age Day
+2026-11-02,JPY,National Foundation Day
+2026-02-23,JPY,Emperor’s Birthday
+2026-04-29,JPY,Shōwa Day
+2026-03-05,JPY,Constitution Memorial Day
+2026-04-05,JPY,Greenery Day
+2026-05-05,JPY,Children’s Day
+2026-09-21,JPY,Respect for the Aged Day
+2026-09-23,JPY,Autumn Equinox
+2026-03-11,JPY,Culture Day
+2026-11-23,JPY,Labour Thanksgiving Day
+2025-01-01,CHF,New Year’s Day
+2025-02-01,CHF,Berchtold Day
+2025-06-01,CHF,Epiphany
+2025-03-19,CHF,St. Joseph’s Day
+2025-04-18,CHF,Good Friday
+2025-04-21,CHF,Easter Monday
+2025-01-05,CHF,Labour Day
+2025-05-29,CHF,Ascension Day
+2025-09-06,CHF,Whit Monday
+2025-08-15,CHF,Assumption Day
+2025-01-11,CHF,All Saints’ Day
+2025-08-12,CHF,Immaculate Conception
+2025-12-25,CHF,Christmas Day
+2025-12-26,CHF,St. Stephen’s Day
+2026-01-01,CHF,New Year’s Day
+2026-02-01,CHF,Berchtold Day
+2026-06-01,CHF,Epiphany
+2026-03-19,CHF,St. Joseph’s Day
+2026-03-04,CHF,Good Friday
+2026-06-04,CHF,Easter Monday
+2026-01-05,CHF,Labour Day
+2026-05-14,CHF,Ascension Day
+2026-05-25,CHF,Whit Monday
+2026-08-15,CHF,Assumption Day
+2026-01-11,CHF,All Saints’ Day
+2026-08-12,CHF,Immaculate Conception
+2026-12-25,CHF,Christmas Day
+2026-12-26,CHF,St. Stephen’s Day
+2025-01-01,AUD,New Year’s Day
+2025-01-27,AUD,Australia Day observed
+2025-04-18,AUD,Good Friday
+2025-04-21,AUD,Easter Monday
+2025-04-25,AUD,ANZAC Day
+2025-09-06,AUD,King’s Birthday
+2025-12-25,AUD,Christmas Day
+2025-12-26,AUD,Boxing Day
+2026-01-01,AUD,New Year’s Day
+2026-01-26,AUD,Australia Day
+2026-03-04,AUD,Good Friday
+2026-06-04,AUD,Easter Monday
+2026-04-25,AUD,ANZAC Day
+2026-08-06,AUD,King’s Birthday
+2026-12-25,AUD,Christmas Day
+2026-12-26,AUD,Boxing Day
+2025-01-01,NZD,New Year’s Day
+2025-02-01,NZD,Day After New Year’s Day
+2025-06-02,NZD,Waitangi Day
+2025-04-18,NZD,Good Friday
+2025-04-21,NZD,Easter Monday
+2025-04-25,NZD,ANZAC Day
+2025-02-06,NZD,King’s Birthday
+2025-06-20,NZD,Matariki
+2025-10-27,NZD,Labour Day
+2025-12-25,NZD,Christmas Day
+2025-12-26,NZD,Boxing Day
+2026-01-01,NZD,New Year’s Day
+2026-02-01,NZD,Day After New Year’s Day
+2026-06-02,NZD,Waitangi Day
+2026-03-04,NZD,Good Friday
+2026-06-04,NZD,Easter Monday
+2026-04-25,NZD,ANZAC Day
+2026-01-06,NZD,King’s Birthday
+2026-10-07,NZD,Matariki
+2026-10-26,NZD,Labour Day
+2026-12-25,NZD,Christmas Day
+2026-12-26,NZD,Boxing Day
+2025-01-01,CAD,New Year’s Day
+2025-04-18,CAD,Good Friday
+2025-04-21,CAD,Easter Monday
+2025-05-19,CAD,Victoria Day
+2025-01-07,CAD,Canada Day
+2025-04-08,CAD,Civic Holiday
+2025-01-09,CAD,Labour Day
+2025-10-13,CAD,Thanksgiving Day
+2025-11-11,CAD,Remembrance Day
+2025-12-25,CAD,Christmas Day
+2025-12-26,CAD,Boxing Day
+2026-01-01,CAD,New Year’s Day
+2026-03-04,CAD,Good Friday
+2026-06-04,CAD,Easter Monday
+2026-05-18,CAD,Victoria Day
+2026-01-07,CAD,Canada Day
+2026-03-08,CAD,Civic Holiday
+2026-07-09,CAD,Labour Day
+2026-12-10,CAD,Thanksgiving Day
+2026-11-11,CAD,Remembrance Day
+2026-12-25,CAD,Christmas Day
+2026-12-26,CAD,Boxing Day
+2025-01-01,PLN,New Year's Day
+2025-01-06,PLN,Epiphany
+2025-05-01,PLN,Labour Day
+2025-05-03,PLN,Constitution Day
+2025-06-19,PLN,Corpus Christi
+2025-08-15,PLN,Assumption
+2025-11-01,PLN,All Saints’ Day
+2025-11-11,PLN,Independence Day
+2025-12-25,PLN,Christmas
+2025-12-26,PLN,Second Day of Christmas
+2026-01-01,PLN,New Year's Day
+2026-01-06,PLN,Epiphany
+2026-05-01,PLN,Labour Day
+2026-05-03,PLN,Constitution Day
+2026-05-30,PLN,Corpus Christi
+2026-08-15,PLN,Assumption
+2026-11-01,PLN,All Saints’ Day
+2026-11-11,PLN,Independence Day
+2026-12-25,PLN,Christmas
+2026-12-26,PLN,Second Day of Christmas
+2025-01-01,HUF,New Year's Day
+2025-03-15,HUF,Revolution Day
+2025-04-18,HUF,Good Friday
+2025-04-21,HUF,Easter Monday
+2025-05-01,HUF,Labour Day
+2025-08-20,HUF,St. Stephen’s Day
+2025-10-23,HUF,Republic Day
+2025-12-25,HUF,Christmas
+2025-12-26,HUF,Second Day of Christmas
+2026-01-01,HUF,New Year's Day
+2026-03-15,HUF,Revolution Day
+2026-04-03,HUF,Good Friday
+2026-04-06,HUF,Easter Monday
+2026-05-01,HUF,Labour Day
+2026-08-20,HUF,St. Stephen’s Day
+2026-10-23,HUF,Republic Day
+2026-12-25,HUF,Christmas
+2026-12-26,HUF,Second Day of Christmas
+2025-01-01,CZK,New Year’s Day
+2025-04-21,CZK,Easter Monday
+2025-05-01,CZK,Labour Day
+2025-05-08,CZK,Liberation Day
+2025-07-05,CZK,Saints Cyril and Methodius Day
+2025-07-06,CZK,Jan Hus Day
+2025-09-28,CZK,St Wenceslas Day
+2025-10-28,CZK,Independence Day
+2025-11-17,CZK,Freedom and Democracy Day
+2025-12-24,CZK,Christmas Eve
+2025-12-25,CZK,Christmas
+2025-12-26,CZK,St. Stephen's Day
+2026-01-01,CZK,New Year’s Day
+2026-04-06,CZK,Easter Monday
+2026-05-01,CZK,Labour Day
+2026-05-08,CZK,Liberation Day
+2026-07-05,CZK,Saints Cyril and Methodius Day
+2026-07-06,CZK,Jan Hus Day
+2026-09-28,CZK,St Wenceslas Day
+2026-10-28,CZK,Independence Day
+2026-11-17,CZK,Freedom and Democracy Day
+2026-12-24,CZK,Christmas Eve
+2026-12-25,CZK,Christmas
+2026-12-26,CZK,St. Stephen's Day
+2025-01-01,ZAR,New Year’s Day
+2025-03-21,ZAR,Human Rights Day
+2025-04-18,ZAR,Good Friday
+2025-04-21,ZAR,Family Day
+2025-04-27,ZAR,Freedom Day
+2025-05-01,ZAR,Workers’ Day
+2025-06-16,ZAR,Youth Day
+2025-08-09,ZAR,Women’s Day
+2025-09-24,ZAR,Heritage Day
+2025-12-16,ZAR,Day of Reconciliation
+2025-12-25,ZAR,Christmas
+2025-12-26,ZAR,Day of Goodwill
+2026-01-01,ZAR,New Year’s Day
+2026-03-21,ZAR,Human Rights Day
+2026-04-03,ZAR,Good Friday
+2026-04-06,ZAR,Family Day
+2026-04-27,ZAR,Freedom Day
+2026-05-01,ZAR,Workers’ Day
+2026-06-16,ZAR,Youth Day
+2026-08-09,ZAR,Women’s Day
+2026-09-24,ZAR,Heritage Day
+2026-12-16,ZAR,Day of Reconciliation
+2026-12-25,ZAR,Christmas
+2026-12-26,ZAR,Day of Goodwill
+2025-01-01,DKK,New Year’s Day
+2025-04-17,DKK,Maundy Thursday
+2025-04-18,DKK,Good Friday
+2025-04-21,DKK,Easter Monday
+2025-05-01,DKK,Labour Day
+2025-05-29,DKK,Ascension Day
+2025-06-09,DKK,Whit Monday
+2025-06-05,DKK,Constitution Day
+2025-12-25,DKK,Christmas
+2025-12-26,DKK,Second Day of Christmas
+2026-01-01,DKK,New Year’s Day
+2026-04-02,DKK,Maundy Thursday
+2026-04-03,DKK,Good Friday
+2026-04-06,DKK,Easter Monday
+2026-05-01,DKK,Labour Day
+2026-05-14,DKK,Ascension Day
+2026-05-25,DKK,Whit Monday
+2026-06-05,DKK,Constitution Day
+2026-12-25,DKK,Christmas
+2026-12-26,DKK,Second Day of Christmas
+2025-01-01,NOK,New Year’s Day
+2025-04-17,NOK,Maundy Thursday
+2025-04-18,NOK,Good Friday
+2025-04-21,NOK,Easter Monday
+2025-05-01,NOK,Labour Day
+2025-05-17,NOK,Constitution Day
+2025-05-29,NOK,Ascension Day
+2025-06-09,NOK,Whit Monday
+2025-12-25,NOK,Christmas
+2025-12-26,NOK,Boxing Day
+2026-01-01,NOK,New Year’s Day
+2026-04-02,NOK,Maundy Thursday
+2026-04-03,NOK,Good Friday
+2026-04-06,NOK,Easter Monday
+2026-05-01,NOK,Labour Day
+2026-05-17,NOK,Constitution Day
+2026-05-14,NOK,Ascension Day
+2026-05-25,NOK,Whit Monday
+2026-12-25,NOK,Christmas
+2026-12-26,NOK,Boxing Day
+2025-01-01,SEK,New Year’s Day
+2025-01-06,SEK,Epiphany
+2025-04-18,SEK,Good Friday
+2025-04-21,SEK,Easter Monday
+2025-05-01,SEK,Labour Day
+2025-05-29,SEK,Ascension Day
+2025-06-06,SEK,National Day
+2025-06-21,SEK,Midsummer Day
+2025-12-25,SEK,Christmas
+2025-12-26,SEK,Boxing Day
+2026-01-01,SEK,New Year’s Day
+2026-01-06,SEK,Epiphany
+2026-04-03,SEK,Good Friday
+2026-04-06,SEK,Easter Monday
+2026-05-01,SEK,Labour Day
+2026-05-14,SEK,Ascension Day
+2026-06-06,SEK,National Day
+2026-06-20,SEK,Midsummer Day
+2026-12-25,SEK,Christmas
+2026-12-26,SEK,Boxing Day
+2025-01-01,BRL,New Year's Day
+2025-03-03,BRL,Carnival Monday
+2025-03-04,BRL,Carnival Tuesday
+2025-04-21,BRL,Tiradentes Day
+2025-05-01,BRL,Labour Day
+2025-09-07,BRL,Independence Day
+2025-10-12,BRL,Our Lady of Aparecida
+2025-11-02,BRL,All Souls’ Day
+2025-11-15,BRL,Republic Day
+2025-12-25,BRL,Christmas
+2026-01-01,BRL,New Year's Day
+2026-02-16,BRL,Carnival Monday
+2026-02-17,BRL,Carnival Tuesday
+2026-04-21,BRL,Tiradentes Day
+2026-05-01,BRL,Labour Day
+2026-09-07,BRL,Independence Day
+2026-10-12,BRL,Our Lady of Aparecida
+2026-11-02,BRL,All Souls’ Day
+2026-11-15,BRL,Republic Day
+2026-12-25,BRL,Christmas
+2025-05-13,USD,CPI
+2025-06-11,USD,CPI
+2025-07-15,USD,CPI
+2025-08-12,USD,CPI
+2025-09-11,USD,CPI
+2025-10-15,USD,CPI
+2025-11-13,USD,CPI
+2025-12-11,USD,CPI
+2026-01-15,USD,CPI
+2026-02-12,USD,CPI
+2026-03-12,USD,CPI
+2026-04-10,USD,CPI
+2025-05-21,GBP,CPI
+2025-06-19,GBP,CPI
+2025-07-17,GBP,CPI
+2025-08-21,GBP,CPI
+2025-09-18,GBP,CPI
+2025-10-16,GBP,CPI
+2025-11-20,GBP,CPI
+2025-12-18,GBP,CPI
+2026-01-22,GBP,CPI
+2026-02-19,GBP,CPI
+2026-03-19,GBP,CPI
+2026-04-16,GBP,CPI
+2025-05-31,EUR,CPI
+2025-06-30,EUR,CPI
+2025-07-31,EUR,CPI
+2025-08-30,EUR,CPI
+2025-09-30,EUR,CPI
+2025-10-31,EUR,CPI
+2025-11-30,EUR,CPI
+2025-12-31,EUR,CPI
+2026-01-31,EUR,CPI
+2026-02-28,EUR,CPI
+2026-03-31,EUR,CPI
+2026-04-30,EUR,CPI
+2025-05-24,JPY,CPI
+2025-06-21,JPY,CPI
+2025-07-19,JPY,CPI
+2025-08-23,JPY,CPI
+2025-09-20,JPY,CPI
+2025-10-18,JPY,CPI
+2025-11-22,JPY,CPI
+2025-12-20,JPY,CPI
+2026-01-24,JPY,CPI
+2026-02-21,JPY,CPI
+2026-03-21,JPY,CPI
+2026-04-18,JPY,CPI
+2025-05-05,CHF,CPI
+2025-06-03,CHF,CPI
+2025-07-03,CHF,CPI
+2025-08-05,CHF,CPI
+2025-09-03,CHF,CPI
+2025-10-03,CHF,CPI
+2025-11-05,CHF,CPI
+2025-12-03,CHF,CPI
+2026-01-07,CHF,CPI
+2026-02-04,CHF,CPI
+2026-03-04,CHF,CPI
+2026-04-02,CHF,CPI
+2025-05-29,AUD,CPI
+2025-06-26,AUD,CPI
+2025-07-31,AUD,CPI
+2025-08-28,AUD,CPI
+2025-09-25,AUD,CPI
+2025-10-30,AUD,CPI
+2025-11-27,AUD,CPI
+2025-12-18,AUD,CPI
+2026-01-29,AUD,CPI
+2026-02-26,AUD,CPI
+2026-03-26,AUD,CPI
+2026-04-30,AUD,CPI
+2025-05-19,NZD,CPI
+2025-06-17,NZD,CPI
+2025-07-15,NZD,CPI
+2025-08-19,NZD,CPI
+2025-09-16,NZD,CPI
+2025-10-21,NZD,CPI
+2025-11-18,NZD,CPI
+2025-12-16,NZD,CPI
+2026-01-20,NZD,CPI
+2026-02-17,NZD,CPI
+2026-03-17,NZD,CPI
+2026-04-21,NZD,CPI
+2025-05-20,CAD,CPI
+2025-06-24,CAD,CPI
+2025-07-22,CAD,CPI
+2025-08-19,CAD,CPI
+2025-09-16,CAD,CPI
+2025-10-21,CAD,CPI
+2025-11-18,CAD,CPI
+2025-12-16,CAD,CPI
+2026-01-20,CAD,CPI
+2026-02-17,CAD,CPI
+2026-03-17,CAD,CPI
+2026-04-21,CAD,CPI
+2025-05-15,PLN,CPI
+2025-06-14,PLN,CPI
+2025-07-13,PLN,CPI
+2025-08-14,PLN,CPI
+2025-09-13,PLN,CPI
+2025-10-14,PLN,CPI
+2025-11-13,PLN,CPI
+2025-12-14,PLN,CPI
+2026-01-14,PLN,CPI
+2026-02-14,PLN,CPI
+2026-03-14,PLN,CPI
+2026-04-14,PLN,CPI
+2025-05-09,HUF,CPI
+2025-06-10,HUF,CPI
+2025-07-09,HUF,CPI
+2025-08-09,HUF,CPI
+2025-09-09,HUF,CPI
+2025-10-09,HUF,CPI
+2025-11-09,HUF,CPI
+2025-12-09,HUF,CPI
+2026-01-09,HUF,CPI
+2026-02-09,HUF,CPI
+2026-03-09,HUF,CPI
+2026-04-09,HUF,CPI
+2025-05-13,CZK,CPI
+2025-06-10,CZK,CPI
+2025-07-10,CZK,CPI
+2025-08-10,CZK,CPI
+2025-09-10,CZK,CPI
+2025-10-10,CZK,CPI
+2025-11-10,CZK,CPI
+2025-12-10,CZK,CPI
+2026-01-10,CZK,CPI
+2026-02-10,CZK,CPI
+2026-03-10,CZK,CPI
+2026-04-10,CZK,CPI
+2025-05-22,ZAR,CPI
+2025-06-19,ZAR,CPI
+2025-07-24,ZAR,CPI
+2025-08-21,ZAR,CPI
+2025-09-18,ZAR,CPI
+2025-10-23,ZAR,CPI
+2025-11-20,ZAR,CPI
+2025-12-18,ZAR,CPI
+2026-01-22,ZAR,CPI
+2026-02-19,ZAR,CPI
+2026-03-19,ZAR,CPI
+2026-04-23,ZAR,CPI
+2025-05-12,DKK,CPI
+2025-06-10,DKK,CPI
+2025-07-10,DKK,CPI
+2025-08-10,DKK,CPI
+2025-09-10,DKK,CPI
+2025-10-10,DKK,CPI
+2025-11-10,DKK,CPI
+2025-12-10,DKK,CPI
+2026-01-10,DKK,CPI
+2026-02-10,DKK,CPI
+2026-03-10,DKK,CPI
+2026-04-10,DKK,CPI
+2025-05-10,NOK,CPI
+2025-06-10,NOK,CPI
+2025-07-10,NOK,CPI
+2025-08-10,NOK,CPI
+2025-09-10,NOK,CPI
+2025-10-10,NOK,CPI
+2025-11-10,NOK,CPI
+2025-12-10,NOK,CPI
+2026-01-10,NOK,CPI
+2026-02-10,NOK,CPI
+2026-03-10,NOK,CPI
+2026-04-10,NOK,CPI
+2025-05-13,SEK,CPI
+2025-06-12,SEK,CPI
+2025-07-12,SEK,CPI
+2025-08-12,SEK,CPI
+2025-09-12,SEK,CPI
+2025-10-12,SEK,CPI
+2025-11-12,SEK,CPI
+2025-12-12,SEK,CPI
+2026-01-12,SEK,CPI
+2026-02-12,SEK,CPI
+2026-03-12,SEK,CPI
+2026-04-12,SEK,CPI
+2025-05-10,BRL,CPI
+2025-06-10,BRL,CPI
+2025-07-10,BRL,CPI
+2025-08-10,BRL,CPI
+2025-09-10,BRL,CPI
+2025-10-10,BRL,CPI
+2025-11-10,BRL,CPI
+2025-12-10,BRL,CPI
+2026-01-10,BRL,CPI
+2026-02-10,BRL,CPI
+2026-03-10,BRL,CPI
+2026-04-10,BRL,CPI
+2025-01-01,USD,NFP
+2025-01-20,USD,NFP
+2025-02-17,USD,NFP
+2025-05-26,USD,NFP
+2025-07-04,USD,NFP
+2025-09-01,USD,NFP
+2025-10-13,USD,NFP
+2025-11-11,USD,NFP
+2025-11-27,USD,NFP
+2025-12-25,USD,NFP
+2026-01-01,USD,NFP
+2026-01-19,USD,NFP
+2026-02-16,USD,NFP
+2026-05-25,USD,NFP
+2026-07-04,USD,NFP
+2026-09-07,USD,NFP
+2026-10-12,USD,NFP
+2026-11-11,USD,NFP
+2026-11-26,USD,NFP
+2026-12-25,USD,NFP
