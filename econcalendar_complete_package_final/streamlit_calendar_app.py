@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit_calendar import calendar
 
 # Load dataset
-file_path = os.path.join(os.path.dirname(__file__), "EconomicCalendar.csv")
+file_path = os.path.join(os.path.dirname(__file__), "EconomicCalenderFinal.csv")
 df = pd.read_csv(file_path)
 df["Date"] = pd.to_datetime(df["Date"])
 
