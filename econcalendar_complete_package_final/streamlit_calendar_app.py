@@ -71,6 +71,9 @@ st.set_page_config(page_title="Economic Calendar", layout="wide")
 
 st.title("Interactive Economic Calendar")
 
+fig = render_economic_calendar('EconomicCalendarFixed.csv')
+st.plotly_chart(fig, use_container_width=True)
+
 # Currencies in desired order
 currencies_order = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'AUD', 'NZD', 'CAD',
                     'SEK', 'PLN', 'HUF', 'DKK', 'CZK', 'NOK', 'ZAR', 'BRL']
