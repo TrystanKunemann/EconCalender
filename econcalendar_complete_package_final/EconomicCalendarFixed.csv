@@ -309,334 +309,334 @@ Date,Currency,Event
 03/10/2025,USD,NFP
 07/11/2025,USD,NFP
 05/12/2025,USD,NFP
-01/01/2025,USD,New Year's Day
-20/01/2025,USD,Martin Luther King Jr. Day
-17/02/2025,USD,Presidents' Day
-26/05/2025,USD,Memorial Day
-04/07/2025,USD,Independence Day
-01/09/2025,USD,Labor Day
-13/10/2025,USD,Columbus Day
-11/11/2025,USD,Veterans Day
-27/11/2025,USD,Thanksgiving Day
-25/12/2025,USD,Christmas Day
-01/01/2026,USD,New Year's Day
-19/01/2026,USD,Martin Luther King Jr. Day
-16/02/2026,USD,Presidents' Day
-25/05/2026,USD,Memorial Day
-04/07/2026,USD,Independence Day
-07/09/2026,USD,Labor Day
-12/10/2026,USD,Columbus Day
-11/11/2026,USD,Veterans Day
-26/11/2026,USD,Thanksgiving Day
-25/12/2026,USD,Christmas Day
-01/01/2025,GBP,New Year's Day
-18/04/2025,GBP,Good Friday
-21/04/2025,GBP,Easter Monday
-05/05/2025,GBP,Early May Bank Holiday
-26/05/2025,GBP,Spring Bank Holiday
-25/08/2025,GBP,Summer Bank Holiday
-25/12/2025,GBP,Christmas Day
-26/12/2025,GBP,Boxing Day
-01/01/2026,GBP,New Year's Day
-03/04/2026,GBP,Good Friday
-06/04/2026,GBP,Easter Monday
-04/05/2026,GBP,Early May Bank Holiday
-25/05/2026,GBP,Spring Bank Holiday
-31/08/2026,GBP,Summer Bank Holiday
-25/12/2026,GBP,Christmas Day
-01/01/2025,EUR,New Year's Day
-18/04/2025,EUR,Good Friday
-21/04/2025,EUR,Easter Monday
-01/05/2025,EUR,Labour Day
-09/05/2025,EUR,Europe Day
-29/05/2025,EUR,Ascension Day
-09/06/2025,EUR,Whit Monday
-25/12/2025,EUR,Christmas Day
-26/12/2025,EUR,St. Stephen's Day
-01/01/2026,EUR,New Year's Day
-03/04/2026,EUR,Good Friday
-06/04/2026,EUR,Easter Monday
-01/05/2026,EUR,Labour Day
-09/05/2026,EUR,Europe Day
-14/05/2026,EUR,Ascension Day
-25/05/2026,EUR,Whit Monday
-25/12/2026,EUR,Christmas Day
-26/12/2026,EUR,St. Stephen's Day
-01/01/2025,JPY,New Year's Day
-13/01/2025,JPY,Coming of Age Day
-11/02/2025,JPY,National Foundation Day
-23/02/2025,JPY,Emperor's Birthday
-29/04/2025,JPY,Shōwa Day
-03/05/2025,JPY,Constitution Memorial Day
-04/05/2025,JPY,Greenery Day
-05/05/2025,JPY,Children’s Day
-15/09/2025,JPY,Respect for the Aged Day
-23/09/2025,JPY,Autumn Equinox
-03/11/2025,JPY,Culture Day
-23/11/2025,JPY,Labour Thanksgiving Day
-01/01/2026,JPY,New Year's Day
-12/01/2026,JPY,Coming of Age Day
-11/02/2026,JPY,National Foundation Day
-23/02/2026,JPY,Emperor’s Birthday
-29/04/2026,JPY,Shōwa Day
-03/05/2026,JPY,Constitution Memorial Day
-04/05/2026,JPY,Greenery Day
-05/05/2026,JPY,Children’s Day
-21/09/2026,JPY,Respect for the Aged Day
-23/09/2026,JPY,Autumn Equinox
-03/11/2026,JPY,Culture Day
-23/11/2026,JPY,Labour Thanksgiving Day
-01/01/2025,CHF,New Year’s Day
-02/01/2025,CHF,Berchtold Day
-06/01/2025,CHF,Epiphany
-19/03/2025,CHF,St. Joseph’s Day
-18/04/2025,CHF,Good Friday
-21/04/2025,CHF,Easter Monday
-01/05/2025,CHF,Labour Day
-29/05/2025,CHF,Ascension Day
-09/06/2025,CHF,Whit Monday
-15/08/2025,CHF,Assumption Day
-01/11/2025,CHF,All Saints’ Day
-08/12/2025,CHF,Immaculate Conception
-25/12/2025,CHF,Christmas Day
-26/12/2025,CHF,St. Stephen’s Day
-01/01/2026,CHF,New Year’s Day
-02/01/2026,CHF,Berchtold Day
-06/01/2026,CHF,Epiphany
-19/03/2026,CHF,St. Joseph’s Day
-03/04/2026,CHF,Good Friday
-06/04/2026,CHF,Easter Monday
-01/05/2026,CHF,Labour Day
-14/05/2026,CHF,Ascension Day
-25/05/2026,CHF,Whit Monday
-15/08/2026,CHF,Assumption Day
-01/11/2026,CHF,All Saints’ Day
-08/12/2026,CHF,Immaculate Conception
-25/12/2026,CHF,Christmas Day
-26/12/2026,CHF,St. Stephen’s Day
-01/01/2025,AUD,New Year’s Day
-27/01/2025,AUD,Australia Day observed
-18/04/2025,AUD,Good Friday
-21/04/2025,AUD,Easter Monday
-25/04/2025,AUD,ANZAC Day
-09/06/2025,AUD,King’s Birthday
-25/12/2025,AUD,Christmas Day
-26/12/2025,AUD,Boxing Day
-01/01/2026,AUD,New Year’s Day
-26/01/2026,AUD,Australia Day
-03/04/2026,AUD,Good Friday
-06/04/2026,AUD,Easter Monday
-25/04/2026,AUD,ANZAC Day
-08/06/2026,AUD,King’s Birthday
-25/12/2026,AUD,Christmas Day
-26/12/2026,AUD,Boxing Day
-01/01/2025,NZD,New Year’s Day
-02/01/2025,NZD,Day After New Year’s Day
-06/02/2025,NZD,Waitangi Day
-18/04/2025,NZD,Good Friday
-21/04/2025,NZD,Easter Monday
-25/04/2025,NZD,ANZAC Day
-02/06/2025,NZD,King’s Birthday
-20/06/2025,NZD,Matariki
-27/10/2025,NZD,Labour Day
-25/12/2025,NZD,Christmas Day
-26/12/2025,NZD,Boxing Day
-01/01/2026,NZD,New Year’s Day
-02/01/2026,NZD,Day After New Year’s Day
-06/02/2026,NZD,Waitangi Day
-03/04/2026,NZD,Good Friday
-06/04/2026,NZD,Easter Monday
-25/04/2026,NZD,ANZAC Day
-01/06/2026,NZD,King’s Birthday
-10/07/2026,NZD,Matariki
-26/10/2026,NZD,Labour Day
-25/12/2026,NZD,Christmas Day
-26/12/2026,NZD,Boxing Day
-01/01/2025,CAD,New Year’s Day
-18/04/2025,CAD,Good Friday
-21/04/2025,CAD,Easter Monday
-19/05/2025,CAD,Victoria Day
-01/07/2025,CAD,Canada Day
-04/08/2025,CAD,Civic Holiday
-01/09/2025,CAD,Labour Day
-13/10/2025,CAD,Thanksgiving Day
-11/11/2025,CAD,Remembrance Day
-25/12/2025,CAD,Christmas Day
-26/12/2025,CAD,Boxing Day
-01/01/2026,CAD,New Year’s Day
-03/04/2026,CAD,Good Friday
-06/04/2026,CAD,Easter Monday
-18/05/2026,CAD,Victoria Day
-01/07/2026,CAD,Canada Day
-03/08/2026,CAD,Civic Holiday
-07/09/2026,CAD,Labour Day
-12/10/2026,CAD,Thanksgiving Day
-11/11/2026,CAD,Remembrance Day
-25/12/2026,CAD,Christmas Day
-26/12/2026,CAD,Boxing Day
-01/01/2025,PLN,New Year's Day
-06/01/2025,PLN,Epiphany
-01/05/2025,PLN,Labour Day
-03/05/2025,PLN,Constitution Day
-19/06/2025,PLN,Corpus Christi
-15/08/2025,PLN,Assumption
-01/11/2025,PLN,All Saints’ Day
-11/11/2025,PLN,Independence Day
-25/12/2025,PLN,Christmas
-26/12/2025,PLN,Second Day of Christmas
-01/01/2026,PLN,New Year's Day
-06/01/2026,PLN,Epiphany
-01/05/2026,PLN,Labour Day
-03/05/2026,PLN,Constitution Day
-30/05/2026,PLN,Corpus Christi
-15/08/2026,PLN,Assumption
-01/11/2026,PLN,All Saints’ Day
-11/11/2026,PLN,Independence Day
-25/12/2026,PLN,Christmas
-26/12/2026,PLN,Second Day of Christmas
-01/01/2025,HUF,New Year's Day
-15/03/2025,HUF,Revolution Day
-18/04/2025,HUF,Good Friday
-21/04/2025,HUF,Easter Monday
-01/05/2025,HUF,Labour Day
-20/08/2025,HUF,St. Stephen’s Day
-23/10/2025,HUF,Republic Day
-25/12/2025,HUF,Christmas
-26/12/2025,HUF,Second Day of Christmas
-01/01/2026,HUF,New Year's Day
-15/03/2026,HUF,Revolution Day
-03/04/2026,HUF,Good Friday
-06/04/2026,HUF,Easter Monday
-01/05/2026,HUF,Labour Day
-20/08/2026,HUF,St. Stephen’s Day
-23/10/2026,HUF,Republic Day
-25/12/2026,HUF,Christmas
-26/12/2026,HUF,Second Day of Christmas
-01/01/2025,CZK,New Year’s Day
-21/04/2025,CZK,Easter Monday
-01/05/2025,CZK,Labour Day
-08/05/2025,CZK,Liberation Day
-05/07/2025,CZK,Saints Cyril and Methodius Day
-06/07/2025,CZK,Jan Hus Day
-28/09/2025,CZK,St Wenceslas Day
-28/10/2025,CZK,Independence Day
-17/11/2025,CZK,Freedom and Democracy Day
-24/12/2025,CZK,Christmas Eve
-25/12/2025,CZK,Christmas
-26/12/2025,CZK,St. Stephen's Day
-01/01/2026,CZK,New Year’s Day
-06/04/2026,CZK,Easter Monday
-01/05/2026,CZK,Labour Day
-08/05/2026,CZK,Liberation Day
-05/07/2026,CZK,Saints Cyril and Methodius Day
-06/07/2026,CZK,Jan Hus Day
-28/09/2026,CZK,St Wenceslas Day
-28/10/2026,CZK,Independence Day
-17/11/2026,CZK,Freedom and Democracy Day
-24/12/2026,CZK,Christmas Eve
-25/12/2026,CZK,Christmas
-26/12/2026,CZK,St. Stephen's Day
-01/01/2025,ZAR,New Year’s Day
-21/03/2025,ZAR,Human Rights Day
-18/04/2025,ZAR,Good Friday
-21/04/2025,ZAR,Family Day
-27/04/2025,ZAR,Freedom Day
-01/05/2025,ZAR,Workers’ Day
-16/06/2025,ZAR,Youth Day
-09/08/2025,ZAR,Women’s Day
-24/09/2025,ZAR,Heritage Day
-16/12/2025,ZAR,Day of Reconciliation
-25/12/2025,ZAR,Christmas
-26/12/2025,ZAR,Day of Goodwill
-01/01/2026,ZAR,New Year’s Day
-21/03/2026,ZAR,Human Rights Day
-03/04/2026,ZAR,Good Friday
-06/04/2026,ZAR,Family Day
-27/04/2026,ZAR,Freedom Day
-01/05/2026,ZAR,Workers’ Day
-16/06/2026,ZAR,Youth Day
-09/08/2026,ZAR,Women’s Day
-24/09/2026,ZAR,Heritage Day
-16/12/2026,ZAR,Day of Reconciliation
-25/12/2026,ZAR,Christmas
-26/12/2026,ZAR,Day of Goodwill
-01/01/2025,DKK,New Year’s Day
-17/04/2025,DKK,Maundy Thursday
-18/04/2025,DKK,Good Friday
-21/04/2025,DKK,Easter Monday
-01/05/2025,DKK,Labour Day
-29/05/2025,DKK,Ascension Day
-09/06/2025,DKK,Whit Monday
-05/06/2025,DKK,Constitution Day
-25/12/2025,DKK,Christmas
-26/12/2025,DKK,Second Day of Christmas
-01/01/2026,DKK,New Year’s Day
-02/04/2026,DKK,Maundy Thursday
-03/04/2026,DKK,Good Friday
-06/04/2026,DKK,Easter Monday
-01/05/2026,DKK,Labour Day
-14/05/2026,DKK,Ascension Day
-25/05/2026,DKK,Whit Monday
-05/06/2026,DKK,Constitution Day
-25/12/2026,DKK,Christmas
-26/12/2026,DKK,Second Day of Christmas
-01/01/2025,NOK,New Year’s Day
-17/04/2025,NOK,Maundy Thursday
-18/04/2025,NOK,Good Friday
-21/04/2025,NOK,Easter Monday
-01/05/2025,NOK,Labour Day
-17/05/2025,NOK,Constitution Day
-29/05/2025,NOK,Ascension Day
-09/06/2025,NOK,Whit Monday
-25/12/2025,NOK,Christmas
-26/12/2025,NOK,Boxing Day
-01/01/2026,NOK,New Year’s Day
-02/04/2026,NOK,Maundy Thursday
-03/04/2026,NOK,Good Friday
-06/04/2026,NOK,Easter Monday
-01/05/2026,NOK,Labour Day
-17/05/2026,NOK,Constitution Day
-14/05/2026,NOK,Ascension Day
-25/05/2026,NOK,Whit Monday
-25/12/2026,NOK,Christmas
-26/12/2026,NOK,Boxing Day
-01/01/2025,SEK,New Year’s Day
-06/01/2025,SEK,Epiphany
-18/04/2025,SEK,Good Friday
-21/04/2025,SEK,Easter Monday
-01/05/2025,SEK,Labour Day
-29/05/2025,SEK,Ascension Day
-06/06/2025,SEK,National Day
-21/06/2025,SEK,Midsummer Day
-25/12/2025,SEK,Christmas
-26/12/2025,SEK,Boxing Day
-01/01/2026,SEK,New Year’s Day
-06/01/2026,SEK,Epiphany
-03/04/2026,SEK,Good Friday
-06/04/2026,SEK,Easter Monday
-01/05/2026,SEK,Labour Day
-14/05/2026,SEK,Ascension Day
-06/06/2026,SEK,National Day
-20/06/2026,SEK,Midsummer Day
-25/12/2026,SEK,Christmas
-26/12/2026,SEK,Boxing Day
-01/01/2025,BRL,New Year's Day
-03/03/2025,BRL,Carnival Monday
-04/03/2025,BRL,Carnival Tuesday
-21/04/2025,BRL,Tiradentes Day
-01/05/2025,BRL,Labour Day
-07/09/2025,BRL,Independence Day
-12/10/2025,BRL,Our Lady of Aparecida
-02/11/2025,BRL,All Souls’ Day
-15/11/2025,BRL,Republic Day
-25/12/2025,BRL,Christmas
-01/01/2026,BRL,New Year's Day
-16/02/2026,BRL,Carnival Monday
-17/02/2026,BRL,Carnival Tuesday
-21/04/2026,BRL,Tiradentes Day
-01/05/2026,BRL,Labour Day
-07/09/2026,BRL,Independence Day
-12/10/2026,BRL,Our Lady of Aparecida
-02/11/2026,BRL,All Souls’ Day
-15/11/2026,BRL,Republic Day
-25/12/2026,BRL,Christmas
+01/01/2025,USD,☀️ New Year's Day
+20/01/2025,USD,☀️ Martin Luther King Jr. Day
+17/02/2025,USD,☀️ Presidents' Day
+26/05/2025,USD,☀️ Memorial Day
+04/07/2025,USD,☀️ Independence Day
+01/09/2025,USD,☀️ Labor Day
+13/10/2025,USD,☀️ Columbus Day
+11/11/2025,USD,☀️ Veterans Day
+27/11/2025,USD,☀️ Thanksgiving Day
+25/12/2025,USD,☀️ Christmas Day
+01/01/2026,USD,☀️ New Year's Day
+19/01/2026,USD,☀️ Martin Luther King Jr. Day
+16/02/2026,USD,☀️ Presidents' Day
+25/05/2026,USD,☀️ Memorial Day
+04/07/2026,USD,☀️ Independence Day
+07/09/2026,USD,☀️ Labor Day
+12/10/2026,USD,☀️ Columbus Day
+11/11/2026,USD,☀️ Veterans Day
+26/11/2026,USD,☀️ Thanksgiving Day
+25/12/2026,USD,☀️ Christmas Day
+01/01/2025,GBP,☀️ New Year's Day
+18/04/2025,GBP,☀️ Good Friday
+21/04/2025,GBP,☀️ Easter Monday
+05/05/2025,GBP,☀️ Early May Bank Holiday
+26/05/2025,GBP,☀️ Spring Bank Holiday
+25/08/2025,GBP,☀️ Summer Bank Holiday
+25/12/2025,GBP,☀️ Christmas Day
+26/12/2025,GBP,☀️ Boxing Day
+01/01/2026,GBP,☀️ New Year's Day
+03/04/2026,GBP,☀️ Good Friday
+06/04/2026,GBP,☀️ Easter Monday
+04/05/2026,GBP,☀️ Early May Bank Holiday
+25/05/2026,GBP,☀️ Spring Bank Holiday
+31/08/2026,GBP,☀️ Summer Bank Holiday
+25/12/2026,GBP,☀️ Christmas Day
+01/01/2025,EUR,☀️ New Year's Day
+18/04/2025,EUR,☀️ Good Friday
+21/04/2025,EUR,☀️ Easter Monday
+01/05/2025,EUR,☀️ Labour Day
+09/05/2025,EUR,☀️ Europe Day
+29/05/2025,EUR,☀️ Ascension Day
+09/06/2025,EUR,☀️ Whit Monday
+25/12/2025,EUR,☀️ Christmas Day
+26/12/2025,EUR,☀️ St. Stephen's Day
+01/01/2026,EUR,☀️ New Year's Day
+03/04/2026,EUR,☀️ Good Friday
+06/04/2026,EUR,☀️ Easter Monday
+01/05/2026,EUR,☀️ Labour Day
+09/05/2026,EUR,☀️ Europe Day
+14/05/2026,EUR,☀️ Ascension Day
+25/05/2026,EUR,☀️ Whit Monday
+25/12/2026,EUR,☀️ Christmas Day
+26/12/2026,EUR,☀️ St. Stephen's Day
+01/01/2025,JPY,☀️ New Year's Day
+13/01/2025,JPY,☀️ Coming of Age Day
+11/02/2025,JPY☀,☀️ National Foundation Day
+23/02/2025,JPY,☀️ Emperor's Birthday
+29/04/2025,JPY,☀️ Shōwa Day
+03/05/2025,JPY,☀️ Constitution Memorial Day
+04/05/2025,JPY,☀️ Greenery Day
+05/05/2025,JPY,☀️ Children’s Day
+15/09/2025,JPY,☀️ Respect for the Aged Day
+23/09/2025,JPY,☀️ Autumn Equinox
+03/11/2025,JPY,☀️ Culture Day
+23/11/2025,JPY,☀️ Labour Thanksgiving Day
+01/01/2026,JPY,☀️ New Year's Day
+12/01/2026,JPY,☀️ Coming of Age Day
+11/02/2026,JPY,☀️ National Foundation Day
+23/02/2026,JPY,☀️ Emperor’s Birthday
+29/04/2026,JPY,☀️ Shōwa Day
+03/05/2026,JPY,☀️ Constitution Memorial Day
+04/05/2026,JPY,☀️ Greenery Day
+05/05/2026,JPY,☀️ Children’s Day
+21/09/2026,JPY,☀️ Respect for the Aged Day
+23/09/2026,JPY,☀️ Autumn Equinox
+03/11/2026,JPY,☀️ Culture Day
+23/11/2026,JPY,☀️ Labour Thanksgiving Day
+01/01/2025,CHF,☀️ New Year’s Day
+02/01/2025,CHF,☀️ Berchtold Day
+06/01/2025,CHF,☀️ Epiphany
+19/03/2025,CHF,☀️ St. Joseph’s Day
+18/04/2025,CHF,☀️ Good Friday
+21/04/2025,CHF,☀️ Easter Monday
+01/05/2025,CHF,☀️ Labour Day
+29/05/2025,CHF,☀️ Ascension Day
+09/06/2025,CHF,☀️ Whit Monday
+15/08/2025,CHF,☀️ Assumption Day
+01/11/2025,CHF,☀️ All Saints’ Day
+08/12/2025,CHF,☀️ Immaculate Conception
+25/12/2025,CHF,☀️ Christmas Day
+26/12/2025,CHF,☀️ St. Stephen’s Day
+01/01/2026,CHF,☀️ New Year’s Day
+02/01/2026,CHF,☀️ Berchtold Day
+06/01/2026,CHF,☀️ Epiphany
+19/03/2026,CHF,☀️ St. Joseph’s Day
+03/04/2026,CHF,☀️ Good Friday
+06/04/2026,CHF,☀️ Easter Monday
+01/05/2026,CHF,☀️ Labour Day
+14/05/2026,CHF,☀️ Ascension Day
+25/05/2026,CHF,☀️ Whit Monday
+15/08/2026,CHF,☀️ Assumption Day
+01/11/2026,CHF,☀️ All Saints’ Day
+08/12/2026,CHF,☀️ Immaculate Conception
+25/12/2026,CHF,☀️ Christmas Day
+26/12/2026,CHF,☀️ St. Stephen’s Day
+01/01/2025,AUD,☀️ New Year’s Day
+27/01/2025,AUD,☀️ Australia Day observed
+18/04/2025,AUD,☀️ Good Friday
+21/04/2025,AUD,☀️ Easter Monday
+25/04/2025,AUD,☀️ ANZAC Day
+09/06/2025,AUD,☀️ King’s Birthday
+25/12/2025,AUD,☀️ Christmas Day
+26/12/2025,AUD,☀️ Boxing Day
+01/01/2026,AUD,☀️ New Year’s Day
+26/01/2026,AUD,☀️ Australia Day
+03/04/2026,AUD,☀️ Good Friday
+06/04/2026,AUD,☀️ Easter Monday
+25/04/2026,AUD,☀️ ANZAC Day
+08/06/2026,AUD,☀️ King’s Birthday
+25/12/2026,AUD,☀️ Christmas Day
+26/12/2026,AUD,☀️ Boxing Day
+01/01/2025,NZD,☀️ New Year’s Day
+02/01/2025,NZD,☀️ Day After New Year’s Day
+06/02/2025,NZD,☀️ Waitangi Day
+18/04/2025,NZD,☀️ Good Friday
+21/04/2025,NZD,☀️ Easter Monday
+25/04/2025,NZD,☀️ ANZAC Day
+02/06/2025,NZD,☀️ King’s Birthday
+20/06/2025,NZD,☀️ Matariki
+27/10/2025,NZD,☀️ Labour Day
+25/12/2025,NZD,☀️ Christmas Day
+26/12/2025,NZD,☀️ Boxing Day
+01/01/2026,NZD,☀️ New Year’s Day
+02/01/2026,NZD,☀️ Day After New Year’s Day
+06/02/2026,NZD,☀️ Waitangi Day
+03/04/2026,NZD,☀️ Good Friday
+06/04/2026,NZD,☀️ Easter Monday
+25/04/2026,NZD,☀️ ANZAC Day
+01/06/2026,NZD,☀️ King’s Birthday
+10/07/2026,NZD,☀️ Matariki
+26/10/2026,NZD,☀️ Labour Day
+25/12/2026,NZD,☀️ Christmas Day
+26/12/2026,NZD,☀️ Boxing Day
+01/01/2025,CAD,☀️ New Year’s Day
+18/04/2025,CAD,☀️ Good Friday
+21/04/2025,CAD,☀️ Easter Monday
+19/05/2025,CAD,☀️ Victoria Day
+01/07/2025,CAD,☀️ Canada Day
+04/08/2025,CAD,☀️ Civic Holiday
+01/09/2025,CAD,☀️ Labour Day
+13/10/2025,CAD,☀️ Thanksgiving Day
+11/11/2025,CAD,☀️Remembrance Day
+25/12/2025,CAD,☀️ Christmas Day
+26/12/2025,CAD,☀️ Boxing Day
+01/01/2026,CAD,☀️ New Year’s Day
+03/04/2026,CAD,☀️ Good Friday
+06/04/2026,CAD,☀️ Easter Monday
+18/05/2026,CAD,☀️ Victoria Day
+01/07/2026,CAD,☀️ Canada Day
+03/08/2026,CAD,☀️ Civic Holiday
+07/09/2026,CAD,☀️ Labour Day
+12/10/2026,CAD,☀️ Thanksgiving Day
+11/11/2026,CAD,☀️ Remembrance Day
+25/12/2026,CAD,☀️ Christmas Day
+26/12/2026,CAD,☀️ Boxing Day
+01/01/2025,PLN,☀️ New Year's Day
+06/01/2025,PLN,☀️ Epiphany
+01/05/2025,PLN,☀️ Labour Day
+03/05/2025,PLN,☀️ Constitution Day
+19/06/2025,PLN,☀️ Corpus Christi
+15/08/2025,PLN,☀️ Assumption
+01/11/2025,PLN,☀️ All Saints’ Day
+11/11/2025,PLN,☀️ Independence Day
+25/12/2025,PLN,☀️ Christmas
+26/12/2025,PLN,☀️ Second Day of Christmas
+01/01/2026,PLN,☀️ New Year's Day
+06/01/2026,PLN,☀️ Epiphany
+01/05/2026,PLN,☀️ Labour Day
+03/05/2026,PLN,☀️ Constitution Day
+30/05/2026,PLN,☀️ Corpus Christi
+15/08/2026,PLN,☀️ Assumption
+01/11/2026,PLN,☀️ All Saints’ Day
+11/11/2026,PLN,☀️ Independence Day
+25/12/2026,PLN,☀️ Christmas
+26/12/2026,PLN,☀️ Second Day of Christmas
+01/01/2025,HUF,☀️ New Year's Day
+15/03/2025,HUF,☀️ Revolution Day
+18/04/2025,HUF,☀️ Good Friday
+21/04/2025,HUF,☀️ Easter Monday
+01/05/2025,HUF,☀️ Labour Day
+20/08/2025,HUF,☀️ St. Stephen’s Day
+23/10/2025,HUF,☀️ Republic Day
+25/12/2025,HUF,☀️ Christmas
+26/12/2025,HUF,☀️ Second Day of Christmas
+01/01/2026,HUF,☀️ New Year's Day
+15/03/2026,HUF,☀️ Revolution Day
+03/04/2026,HUF,☀️ Good Friday
+06/04/2026,HUF,☀️ Easter Monday
+01/05/2026,HUF,☀️ Labour Day
+20/08/2026,HUF,☀️ St. Stephen’s Day
+23/10/2026,HUF,☀️ Republic Day
+25/12/2026,HUF,☀️ Christmas
+26/12/2026,HUF,☀️ Second Day of Christmas
+01/01/2025,CZK,☀️ New Year’s Day
+21/04/2025,CZK,☀️ Easter Monday
+01/05/2025,CZK,☀️ Labour Day
+08/05/2025,CZK,☀️ Liberation Day
+05/07/2025,CZK,☀️ Saints Cyril and Methodius Day
+06/07/2025,CZK,☀️ Jan Hus Day
+28/09/2025,CZK,☀️ St Wenceslas Day
+28/10/2025,CZK,☀️ Independence Day
+17/11/2025,CZK,☀️ Freedom and Democracy Day
+24/12/2025,CZK,☀️ Christmas Eve
+25/12/2025,CZK,☀️ Christmas
+26/12/2025,CZK,☀️ St. Stephen's Day
+01/01/2026,CZK,☀️ New Year’s Day
+06/04/2026,CZK,☀️ Easter Monday
+01/05/2026,CZK,☀️ Labour Day
+08/05/2026,CZK,☀️ Liberation Day
+05/07/2026,CZK,☀️ Saints Cyril and Methodius Day
+06/07/2026,CZK,☀️ Jan Hus Day
+28/09/2026,CZK,☀️ St Wenceslas Day
+28/10/2026,CZK,☀️ Independence Day
+17/11/2026,CZK,☀️ Freedom and Democracy Day
+24/12/2026,CZK,☀️ Christmas Eve
+25/12/2026,CZK,☀️ Christmas
+26/12/2026,CZK,☀️ St. Stephen's Day
+01/01/2025,ZAR,☀️ New Year’s Day
+21/03/2025,ZAR,☀️ Human Rights Day
+18/04/2025,ZAR,☀️ Good Friday
+21/04/2025,ZAR,☀️ Family Day
+27/04/2025,ZAR,☀️ Freedom Day
+01/05/2025,ZAR,☀️ Workers’ Day
+16/06/2025,ZAR,☀️ Youth Day
+09/08/2025,ZAR,☀️ Women’s Day
+24/09/2025,ZAR,☀️ Heritage Day
+16/12/2025,ZAR,☀️ Day of Reconciliation
+25/12/2025,ZAR,☀️ Christmas
+26/12/2025,ZAR,☀️ Day of Goodwill
+01/01/2026,ZAR,☀️ New Year’s Day
+21/03/2026,ZAR,☀️ Human Rights Day
+03/04/2026,ZAR,☀️ Good Friday
+06/04/2026,ZAR,☀️ Family Day
+27/04/2026,ZAR,☀️ Freedom Day
+01/05/2026,ZAR,☀️ Workers’ Day
+16/06/2026,ZAR,☀️ Youth Day
+09/08/2026,ZAR,☀️ Women’s Day
+24/09/2026,ZAR,☀️ Heritage Day
+16/12/2026,ZAR,☀️ Day of Reconciliation
+25/12/2026,ZAR,☀️ Christmas
+26/12/2026,ZAR,☀️ Day of Goodwill
+01/01/2025,DKK,☀️ New Year’s Day
+17/04/2025,DKK,☀️ Maundy Thursday
+18/04/2025,DKK,☀️ Good Friday
+21/04/2025,DKK,☀️ Easter Monday
+01/05/2025,DKK,☀️ Labour Day
+29/05/2025,DKK,☀️ Ascension Day
+09/06/2025,DKK,☀️ Whit Monday
+05/06/2025,DKK,☀️ Constitution Day
+25/12/2025,DKK,☀️ Christmas
+26/12/2025,DKK,☀️ Second Day of Christmas
+01/01/2026,DKK,☀️ New Year’s Day
+02/04/2026,DKK,☀️ Maundy Thursday
+03/04/2026,DKK,☀️ Good Friday
+06/04/2026,DKK,☀️ Easter Monday
+01/05/2026,DKK,☀️ Labour Day
+14/05/2026,DKK,☀️ Ascension Day
+25/05/2026,DKK,☀️ Whit Monday
+05/06/2026,DKK,☀️ Constitution Day
+25/12/2026,DKK,☀️ Christmas
+26/12/2026,DKK,☀️ Second Day of Christmas
+01/01/2025,NOK,☀️ New Year’s Day
+17/04/2025,NOK,☀️ Maundy Thursday
+18/04/2025,NOK,☀️ Good Friday
+21/04/2025,NOK,☀️ Easter Monday
+01/05/2025,NOK,☀️ Labour Day
+17/05/2025,NOK,☀️ Constitution Day
+29/05/2025,NOK,☀️ Ascension Day
+09/06/2025,NOK,☀️ Whit Monday
+25/12/2025,NOK,☀️ Christmas
+26/12/2025,NOK,☀️ Boxing Day
+01/01/2026,NOK,☀️ New Year’s Day
+02/04/2026,NOK,☀️ Maundy Thursday
+03/04/2026,NOK,☀️ Good Friday
+06/04/2026,NOK,☀️ Easter Monday
+01/05/2026,NOK,☀️ Labour Day
+17/05/2026,NOK,☀️ Constitution Day
+14/05/2026,NOK,☀️ Ascension Day
+25/05/2026,NOK,☀️ Whit Monday
+25/12/2026,NOK,☀️ Christmas
+26/12/2026,NOK,☀️ Boxing Day
+01/01/2025,SEK,☀️ New Year’s Day
+06/01/2025,SEK,☀️ Epiphany
+18/04/2025,SEK,☀️ Good Friday
+21/04/2025,SEK,☀️ Easter Monday
+01/05/2025,SEK,☀️ Labour Day
+29/05/2025,SEK,☀️ Ascension Day
+06/06/2025,SEK,☀️ National Day
+21/06/2025,SEK,☀️ Midsummer Day
+25/12/2025,SEK,☀️ Christmas
+26/12/2025,SEK,☀️ Boxing Day
+01/01/2026,SEK,☀️ New Year’s Day
+06/01/2026,SEK,☀️ Epiphany
+03/04/2026,SEK,☀️ Good Friday
+06/04/2026,SEK,☀️ Easter Monday
+01/05/2026,SEK,☀️ Labour Day
+14/05/2026,SEK,☀️ Ascension Day
+06/06/2026,SEK,☀️ National Day
+20/06/2026,SEK,☀️ Midsummer Day
+25/12/2026,SEK,☀️ Christmas
+26/12/2026,SEK,☀️ Boxing Day
+01/01/2025,BRL,☀️ New Year's Day
+03/03/2025,BRL,☀️ Carnival Monday
+04/03/2025,BRL,☀️ Carnival Tuesday
+21/04/2025,BRL,☀️ Tiradentes Day
+01/05/2025,BRL,☀️ Labour Day
+07/09/2025,BRL,☀️ Independence Day
+12/10/2025,BRL,☀️ Our Lady of Aparecida
+02/11/2025,BRL,☀️ All Souls’ Day
+15/11/2025,BRL,☀️ Republic Day
+25/12/2025,BRL,☀️ Christmas
+01/01/2026,BRL,☀️ New Year's Day
+16/02/2026,BRL,☀️ Carnival Monday
+17/02/2026,BRL,☀️ Carnival Tuesday
+21/04/2026,BRL,☀️ Tiradentes Day
+01/05/2026,BRL,☀️ Labour Day
+07/09/2026,BRL,☀️ Independence Day
+12/10/2026,BRL,☀️ Our Lady of Aparecida
+02/11/2026,BRL,☀️ All Souls’ Day
+15/11/2026,BRL,☀️ Republic Day
+25/12/2026,BRL,☀️ Christmas
